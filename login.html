@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tulivery Express Bussiness</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body id="loginbg">
+        <section>
+            <div class="row mx-0 px-0">
+                <div class="col-md-12 px-0">
+                    <div class="row mx-0 px-0" id="login">
+                        <div class="leftPanel fade-in" style="background-image: url(images/bglogin.png);" >
+                            <a class="float-right logosm" href="index.html"><img src="images/logo-light.png" alt=""></a>
+                            <div class="footBgBlue">
+                                <p class="boldTittle">Administra tus productos, pedidos y envíos</p>
+                                <h5 class="mb-0 boldTittle">Ingrese a Tulivery tienda</h5>
+                            </div>
+                        </div>
+                        <div class="rightPanel fade-in">
+                            <a class="float-right logosm logomobile" href="index.html"><img src="images/logo-dark.png" alt=""></a>
+                            <form class="form-signin">
+                                <div class="mb-5">
+                                    <h5 class="mb-0 pb-0 boldTittle">Log in</h5>
+                                    <h6 class="mb-3 mt-0 boldTittle">Ingrese a Tulivery tienda</h6>
+                                </div>
+                                <div class="form-label-group">
+                                    <label for="inputPassword">Usuario</label>
+                                    <input type="text" class="form-control" placeholder="Ingrese su usuario">
+                                </div>
+                                <div class="form-label-group">
+                                    <label for="inputPassword">Contraseña</label>
+                                    <input type="password" class="form-control" placeholder="Ingrese su contraseña">
+                                </div>
+                                <div class="row">
+                                    <div class="forgotpass form-label-group mt-1 col-md-12 align-right">
+                                        <a data-toggle="modal" data-target="#password1" href="#">Olvidé mi contraseña</a>
+                                    </div>
+                                </div>
+                                <a href="index.html">
+                                <button  class="mt-3 fullwd btn btn-red">
+                                INGRESAR
+                                </button>
+                                </a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ######################### MODAL - Contraseña  #########################  -->
+        <div class="modal fade" id="password1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="tittleImp mb-5">
+                            <h5 class=  "mb-0 boldTittle">Recuperar contraseña</h5>
+                            <p class="mb-3 boldTittle">Puedes escoger cualquiera de las siguientes opciones</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 pr-1 pl-0 px-2">
+                                <div class="custom-control custom-radio radioCheck custom-control-inline">
+                                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline1">
+                                        <h6>Deseo recibir un código de verificación <strong>via SMS</strong></h6>
+                                        <p>Te llegará un código al número *** *** 180</p>
+                                    </label>
+                                </div>
+                                <div class="custom-control custom-radio radioCheck custom-control-inline">
+                                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                    <label class="custom-control-label" for="customRadioInline2">
+                                        <h6>Prefiero recibir el código de verificación a <strong>mi correo registrado</strong></h6>
+                                        <p>Te llegará un código al correo osc***@gmail.com </p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="justify-content-end fullwd mt-5">
+                                <button id="password-ok" class="mt-3 f-right px-5 py-2 mt-5 btn btn-red">
+                                CONFIRMAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ######################### MODAL - Contraseña  #########################  -->
+        <div class="modal fade" id="password2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="tittleImp mb-5">
+                            <h5 class="mb-0 boldTittle">Recuperar Contraseña</h5>
+                            <p class="mb-3 boldTittle">Paso2: Ingresa tu código</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 pr-1 pl-0 px-2">
+                                <input type="text" class="verificationCode form-control" placeholder="Por favor ingrese el código de verificación">
+                                <p class="float-right">Ingresa el código de 6 cifras</p>
+                            </div>
+                            <div class="justify-content-end fullwd mt-5">
+                                <button id="verify-ok" class="mt-3 f-right px-5 py-2 mt-5 btn btn-red">
+                                VERIFICAR
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ######################### MODAL - Contraseña  #########################  -->
+        <div class="modal fade " id="password3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="tittleImp mb-3 text-center">
+                            <i class="icon-notification alert"></i>
+                            <h5 class="mb-0 boldTittle">¡Genial!</h5>
+                            <p class="mb-3 boldTittle">Se recuperó con éxito su contraseña</p>
+                            <img src="images/verifypass.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="justify-content-end fullwd mt-1">
+                                <button id="closeMessage-ok" class="mt-3 f-right px-5 py-2 mt-2 btn btn-red">
+                                OK
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js" charset="utf-8"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

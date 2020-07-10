@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+    <!-- BEGIN: Head-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Pedidos</title>
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <!-- END: Head-->
+    <!-- BEGIN: Body-->
+    <body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
+        <!-- BEGIN: Header-->
+        <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-light navbar-shadow">
+            <div class="navbar-wrapper">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav flex-row">
+                        <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="icon-toggle-right "></i></a></li>
+                        <li class="nav-item mr-auto">
+                            <a class="navbar-brand" href="index.html">
+                            <img class="brand-logo" alt="f" src="images/logo.png">
+                            <img class="brand-text" alt="g" src="images/logo-text.png">
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-left font-medium-3 white" ></i></a></li>
+                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-down"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content">
+                    <div class="collapse navbar-collapse" id="navbar-mobile">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand" href="#"><i class="icon-full-screen"></i></a></li>
+                            <li class="dropdown dropdown-user nav-item">
+                                <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="avatar">
+                                    <img src="images/avatar.png" alt="avatar">
+                                    </span>
+                                    <div class="empresaNombre">
+                                        <h4>EMPRESA</h4>
+                                        <h5>Mis costillitas</h5>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <li class="dropdown dropdown-notification nav-item">
+                                <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><button class="btn btn-blue">CONTRATO</button></a>
+                                <!-- <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="icon-cart"></i><span class="badge badge-pill badge-danger badge-up badge-glow">2</span></a> -->
+                            <li class="dropdown dropdown-notification nav-item mr-3">
+                                <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="icon-notification"></i><span class="badge badge-pill badge-danger badge-up badge-glow">5</span></a>
+                                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                    <li class="dropdown-menu-header">
+                                        <h6 class="dropdown-header m-0"><span class="grey darken-2">Notificaciones</span></h6>
+                                        <span class="notification-tag badge badge-danger float-right m-0">5 Nuevos</span>
+                                    </li>
+                                    <li class="scrollable-container media-list w-100 ps ps--active-y">
+                                        <a href="javascript:void(0)">
+                                            <div class="media">
+                                                <div class="media-left align-self-center"><i class="icon-notification icon-bg-circle bg-yellow bg-darken-3 mr-0"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                                                    <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                                                    <small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <div class="media">
+                                                <div class="media-left align-self-center"><i class="icon-sale icon-bg-circle bg-blue bg-darken-3 mr-0"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading blue darken-3">Warning notifixation</h6>
+                                                    <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                                                    <small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <div class="media">
+                                                <div class="media-left align-self-center"><i class="icon-notification icon-bg-circle bg-red bg-darken-3 mr-0"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading red darken-3">Warning notifixation</h6>
+                                                    <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                                                    <small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <div class="media">
+                                                <div class="media-left align-self-center"><i class="icon-sale icon-bg-circle bg-blue bg-darken-3 mr-0"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading blue darken-3">Warning notifixation</h6>
+                                                    <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                                                    <small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Ver todas</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-user nav-item">
+                                <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="images/avatar-s-19.png" alt="avatar"><i></i></span></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Mi perfil</a>
+                                    <a class="dropdown-item" href="#">Configuración</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Salir</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Header-->
+        <!-- BEGIN: Main Menu-->
+        <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+            <div class="main-menu-content">
+                <ul class="navigation navigation-main" id="main-menu-navigation" >
+                    <li class=" nav-item"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
+                    <li class="open nav-item">
+                        <a href="#"><i class="icon-sale"></i><span class="menu-title">Ventas </span>
+                        </a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="pedidos.html"><i></i><span>Pedido Online</span></a>
+                            </li>
+                            <li><a class="menu-item" href="pedidos.html"><i></i><span>Pedidos Teléfono</span></a>
+                            </li>
+                            <li><a class="menu-item" href="nuevoPedido.html"><i></i><span>NuevoPedido</span></a>
+                            </li>
+                            <li><a class="menu-item" href="historial.html"><i></i><span>Historial</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="producto.html"><i class="icon-product"></i><span class="menu-title">Productos</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="reportes.html"><i class="icon-report"></i><span class="menu-title">Reportes</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END: Main Menu-->
+        <!-- BEGIN: Content-->
+        <div class="app-content content">
+            <div class="content-wrapper">
+                <div class="content-body pt-6 px-5 pb-4">
+                    <div class="row">
+                        <div class="col-md-12 mt-4 mb-0">
+                            <div class=" mt-2">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12 tittleContent">
+                                        <h5>LISTA DE PEDIDOS</h5>
+                                        <p>Pedidos Online y telefónicos</p>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 f-right">
+                                        <button id="password-ok" class="f-right px-5 py-2 btn btn-red-dark">
+                                        + NUEVO PEDIDO
+                                        </button>
+                                        <button data-toggle="modal" data-target="#confirm" class="f-right px-5 mr-2 py-2 btn btn-blue">
+                                        MODAL ALERT
+                                        </button>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="grid">
+                                            <div class="bgContainer item panelPedido pb-5">
+                                                <div class="headerPanel flex justify-content-between">
+                                                    <div class="left">
+                                                        <h3><i class="icon-web"></i> <strong>N° 125484</strong></h3>
+                                                        <small class="pt-0 mt-0"><strong>Tienda: </strong> Mis constillitas</small>
+                                                    </div>
+                                                    <div class="rigth">
+                                                        <span class="mt-2 px-4 badge badge-pill badge-green badge-glow">PAGADO</span>
+                                                        <br><small>2020-06 10:02</small>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <h2><strong>Oscar Julian Bardales Bardales</strong></h2>
+                                                <h3>920010505</h3>
+                                                <p>San Lorenzo N° 1032</p>
+                                                <p><strong>Distrito: </strong>Surquillo</p>
+                                                <p><strong>Referencia: </strong> San Lorenzo</p>
+                                                <p class="mt-2 payment"><strong>Pagará con tarjeta</strong> </p>
+                                                <div class="separador my-2"></div>
+                                                <table class="info-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Precio</td>
+                                                            <td>S/. 30.00</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Delivery</td>
+                                                            <td>S/. 3.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Total</th>
+                                                            <th>S/. 33.00
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="separador my-2"></div>
+                                                <table class="detailtable mt-1">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="button-inline mt-4">
+                                                    <button class="btn btn-red-dark">ANULAR</button>
+                                                    <button class="btn btn-blue">RECIBIR</button>
+                                                </div>
+                                            </div>
+                                            <div class="bgContainer item panelPedido">
+                                                <div class="headerPanel flex justify-content-between">
+                                                    <div class="left">
+                                                        <h3><i class="icon-phone"></i> <strong>N° 125484</strong></h3>
+                                                        <small class="pt-0 mt-0"><strong>Tienda: </strong> Mis constillitas</small>
+                                                    </div>
+                                                    <div class="rigth">
+                                                        <span class="mt-2 px-4 badge badge-pill badge-green badge-glow">PAGADO</span>
+                                                        <br><small>2020-06 10:02</small>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <h2><strong>Oscar Julian Bardales Bardales</strong></h2>
+                                                <h3>920010505</h3>
+                                                <p>San Lorenzo N° 1032</p>
+                                                <p><strong>Distrito: </strong>Surquillo</p>
+                                                <p><strong>Referencia: </strong> San Lorenzo</p>
+                                                <p class="mt-2 payment"><strong>Pagará con tarjeta</strong> </p>
+                                                <div class="separador my-2"></div>
+                                                <table class="info-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Precio</td>
+                                                            <td>S/. 30.00</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Delivery</td>
+                                                            <td>S/. 3.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Total</th>
+                                                            <th>S/. 33.00
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="separador my-2"></div>
+                                                <table class="detailtable mt-1">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="button-inline mt-4">
+                                                    <button class="btn btn-red-dark">ANULAR</button>
+                                                    <button class="btn btn-blue">RECIBIR</button>
+                                                </div>
+                                            </div>
+                                            <div class="bgContainer item panelPedido pb-5">
+                                                <div class="headerPanel flex justify-content-between">
+                                                    <div class="left">
+                                                        <h3><i class="icon-phone"></i> <strong>N° 125484</strong></h3>
+                                                        <small class="pt-0 mt-0"><strong>Tienda: </strong> Mis constillitas</small>
+                                                    </div>
+                                                    <div class="rigth">
+                                                        <span class="mt-2 px-4 badge badge-pill badge-danger badge-glow">PENDIENTE</span>
+                                                        <br><small>2020-06 10:02</small>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <h2><strong>Oscar Julian Bardales Bardales</strong></h2>
+                                                <h3>920010505</h3>
+                                                <p>San Lorenzo N° 1032</p>
+                                                <p><strong>Distrito: </strong>Surquillo</p>
+                                                <p><strong>Referencia: </strong> San Lorenzo</p>
+                                                <p class="mt-2 payment"><strong>Pagará con tarjeta</strong> </p>
+                                                <div class="separador my-2"></div>
+                                                <table class="info-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Precio</td>
+                                                            <td>S/. 30.00</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Delivery</td>
+                                                            <td>S/. 3.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Total</th>
+                                                            <th>S/. 33.00
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="separador my-2"></div>
+                                                <table class="detailtable mt-1">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="button-inline mt-4">
+                                                    <button class="btn btn-red-dark">ANULAR</button>
+                                                    <button class="btn btn-blue">RECIBIR</button>
+                                                </div>
+                                            </div>
+                                            <div class="bgContainer item panelPedido pb-5">
+                                                <div class="headerPanel flex justify-content-between">
+                                                    <div class="left">
+                                                        <h3><i class="icon-phone"></i> <strong>N° 125484</strong></h3>
+                                                        <small class="pt-0 mt-0"><strong>Tienda: </strong> Mis constillitas</small>
+                                                    </div>
+                                                    <div class="rigth">
+                                                        <span class="mt-2 px-4 badge badge-pill badge-danger badge-glow">PENDIENTE</span>
+                                                        <br><small>2020-06 10:02</small>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <h2><strong>Oscar Julian Bardales Bardales</strong></h2>
+                                                <h3>920010505</h3>
+                                                <p>San Lorenzo N° 1032</p>
+                                                <p><strong>Distrito: </strong>Surquillo</p>
+                                                <p><strong>Referencia: </strong> San Lorenzo</p>
+                                                <p class="mt-2 payment"><strong>Pagará con tarjeta</strong> </p>
+                                                <div class="separador my-2"></div>
+                                                <table class="info-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Precio</td>
+                                                            <td>S/. 30.00</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Delivery</td>
+                                                            <td>S/. 3.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Total</th>
+                                                            <th>S/. 33.00
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="separador my-2"></div>
+                                                <table class="detailtable mt-1">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="button-inline mt-4">
+                                                    <button class="btn btn-red-dark">ANULAR</button>
+                                                    <button class="btn btn-blue">RECIBIR</button>
+                                                </div>
+                                            </div>
+                                            <div class="bgContainer item panelPedido pb-5">
+                                                <div class="headerPanel flex justify-content-between">
+                                                    <div class="left">
+                                                        <h3><i class="icon-phone"></i> <strong>N° 125484</strong></h3>
+                                                        <small class="pt-0 mt-0"><strong>Tienda: </strong> Mis constillitas</small>
+                                                    </div>
+                                                    <div class="rigth">
+                                                        <span class="mt-2 px-4 badge badge-pill badge-danger badge-glow">PENDIENTE</span>
+                                                        <br><small>2020-06 10:02</small>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <h2><strong>Oscar Julian Bardales Bardales</strong></h2>
+                                                <h3>920010505</h3>
+                                                <p>San Lorenzo N° 1032</p>
+                                                <p><strong>Distrito: </strong>Surquillo</p>
+                                                <p><strong>Referencia: </strong> San Lorenzo</p>
+                                                <p class="mt-2 payment"><strong>Pagará con tarjeta</strong> </p>
+                                                <div class="separador my-2"></div>
+                                                <table class="info-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Precio</td>
+                                                            <td>S/. 30.00</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Delivery</td>
+                                                            <td>S/. 3.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Total</th>
+                                                            <th>S/. 33.00
+                                                            </th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="separador my-2"></div>
+                                                <table class="detailtable mt-1">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>- Pechuga mis costillas</td>
+                                                            <td>1x S/. 15.00</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <div class="button-inline mt-4">
+                                                    <button class="btn btn-red-dark">ANULAR</button>
+                                                    <button class="btn btn-blue">RECIBIR</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Content-->
+        <!-- ######################### MODAL - Confim  #########################  -->
+        <div class="modal fade " id="confirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="tittleImp mb-3 text-center">
+                            <i class="icon-notification alert"></i>
+                            <h5 class="mb-0 boldTittle">¡Pedido Nuevo!</h5>
+                            <p class="mb-3 boldTittle">Ingresó un pedido online, recuerda hacerle seguimiento</p>
+                            <img src="images/confirm.png" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="text-center fullwd mt-1">
+                                <button id="closeMessage-ok" class="mt-3 px-5 py-2 mt-2 btn btn-blue">
+                                VER
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/vendors.min.js"></script>
+        <script src="js/app-menu.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+    <!-- END: Body-->
+</html>
