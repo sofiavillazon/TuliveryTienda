@@ -1,7 +1,76 @@
+
 /*=========================================================================================
   File Name: app.js
   Description: Template related app JS.
 ==========================================================================================*/
+
+
+// menuslide
+
+// duration of scroll animation
+var scrollDuration = 300;
+var leftPaddle = document.getElementsByClassName('left-paddle');
+var rightPaddle = document.getElementsByClassName('right-paddle');
+var item2sLength = $('.item2').length;
+var item2Size = $('.item2').outerWidth(true);
+var paddleMargin = 0;
+var scrollInc= item2Size*3;
+
+var getMenuWrapperSize = function() {
+	return $('.menu-wrapper').outerWidth();
+}
+
+var menuWrapperSize = getMenuWrapperSize();
+$(window).on('resize', function() {
+	menuWrapperSize = getMenuWrapperSize();
+});
+
+var menuVisibleSize = menuWrapperSize;
+var getMenuSize = function() {
+	return item2sLength * item2Size;
+};
+
+var menuSize = getMenuSize();
+var menuInvisibleSize = menuSize - menuWrapperSize;
+var getMenuPosition = function() {
+    // console.log("=");
+    return $('.menu').scrollLeft();
+};
+
+$('.menu').on('scroll', function() {
+    menuInvisibleSize = menuSize - menuWrapperSize;
+    
+	var menuPosition = getMenuPosition();
+	var menuEndOffset = menuInvisibleSize - paddleMargin;
+
+	if (menuPosition <= paddleMargin) {
+		$(leftPaddle).addClass('hidden');
+		$(rightPaddle).removeClass('hidden');
+	} else if (menuPosition < menuEndOffset) {
+		// show both paddles in the middle
+		$(leftPaddle).removeClass('hidden');
+		$(rightPaddle).removeClass('hidden');
+	} else if (menuPosition >= menuEndOffset) {
+		$(leftPaddle).removeClass('hidden');
+		$(rightPaddle).addClass('hidden');
+}
+});
+
+
+// scroll to left
+$(rightPaddle).on('click', function() {
+  scrollInc = scrollInc + (item2Size*3);
+  $('.menu').animate( { scrollLeft: scrollInc }, scrollDuration);
+
+
+});
+
+// scroll to right
+$(leftPaddle).on('click', function() {
+  scrollInc = scrollInc - (item2Size*3);
+  $('.menu').animate( { scrollLeft: scrollInc}, scrollDuration);
+});
+
 
 (function (window, document, $) {
   'use strict';
@@ -194,3 +263,4 @@ $(document).ready(function() {
 $('.pinmap').on('click', function(){
   $(this).siblings().toggleClass('active').siblings().removeClass('active');
 });
+
