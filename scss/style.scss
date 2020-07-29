@@ -23,6 +23,7 @@ $white: #FFFFFF;
 html{
   font-family: "myriadPro"!important;
 }
+
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -75,7 +76,7 @@ textarea:focus, input:focus, input:hover, button:focus {
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
-  background-color: $grey; }
+  background-color: rgb(236, 236, 236); }
 
 /* Track */
 ::-webkit-scrollbar-track {
@@ -176,7 +177,7 @@ textarea:focus, input:focus, input:hover, button:focus {
   border: none;
   border-radius: 1rem;
   outline: 0;
-  padding: 30px 30px 30px 30px;
+  padding: 20px 20px 20px 10px;
 }
 
 
@@ -2339,10 +2340,13 @@ body:after {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-  .rigth{
+  .right{
     text-align: right;
     width: 50%;
-
+  }
+  .left{
+    text-align: left;
+    width: 50%;
   }
   small{
     color: $grey;
@@ -3163,3 +3167,164 @@ input:checked + .slider:before {
   }
 }
 
+
+.selectArrow {
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+.selectArrow:after {
+  content: "\e903";
+  font-family: 'tulivery' !important;
+  padding: 8px 8px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.select__field {
+  height: 40px;
+  width: 100%;
+  padding: 5px 15px;
+  outline: none;
+  font-size: 16px;
+  -webkit-appearance: none;
+  /* for webkit browsers */
+  -moz-appearance: none;
+  /* for firefox */
+  appearance: none;
+  /* for modern browsers */
+}
+
+.detailtable{
+  display: block;
+  height: 96px;
+  overflow-y: scroll;
+}
+
+
+@media (min-width: 992px){
+  .sticky {
+    position: fixed;
+    width: 23%;
+    bottom: -39px;
+    top: 60px;
+    z-index: 1;
+  }
+  
+  .stickyFoot {
+    position: fixed;
+    width: 23%;
+    top: 60px;
+    z-index: 1;
+  }
+
+  .sticky + .content {
+    padding-top: 2px;
+  }
+  
+  .carrito_final
+  {
+    bottom: 0px;
+    position: absolute;
+    width: 89.5%;
+  }
+}
+
+.itemscroll{
+  h4{
+    font-size: 16px !important;
+    text-align: right;
+  }
+}
+
+.scrollItem-4{
+  display: block;
+  max-height: 260px;
+  overflow-y: scroll;
+}
+
+
+.repartoItem  table td{
+  font-size: 12px;
+}
+
+.repartoItem {
+  p{
+    line-height: 17px;
+    font-size: 13px;
+  }
+  .detailtable{
+    height: 40px;
+    width: 100%;
+  }
+}
+
+.repartidor{
+  .menu {
+    height: 70px;
+    background-color: #f6fafd;
+  }
+  .right-paddle {
+    height: 70px;
+    padding: 18px 4px;
+    background-color: #f6fafd;
+    z-index: 20;
+  }
+  .left-paddle {
+    height: 70px;
+    background-color: #f6fafd;
+    padding: 18px 4px;
+    z-index: 20;
+  }
+  .categoryLine h3,.categoryLine h3:hover {
+    top: -10px;
+    font-size: 12px!important;
+    z-index: 20;
+    background: $white;
+  }
+  .categoryLine li.active span{
+    border: 2px solid $blue;
+    border-radius: 5px;
+  }
+  .categoryLine li.active:hover span{
+    border-radius: 5px;
+    border: 2px solid $lightBlue;
+
+  }
+  .categoryLine li,.categoryLine li:hover  {
+    border-radius: 0px;
+    margin-right: 26px;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    width: max-content;
+    cursor: pointer;
+    .avatar {
+      position: relative;
+      width: 53px;
+      height: 50px;
+      white-space: nowrap;
+      border-radius: 5px;
+      cursor: pointer;
+      top: -5px;
+    }
+    .avatar img {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 5px;
+      height: auto;
+      border: 0 none;
+      z-index: 1;
+    }
+  }
+}

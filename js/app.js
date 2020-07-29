@@ -264,3 +264,7 @@ $('.pinmap').on('click', function(){
   $(this).siblings().toggleClass('active').siblings().removeClass('active');
 });
 
+
+
+
+

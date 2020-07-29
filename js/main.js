@@ -112,6 +112,10 @@ function showpassword3() {
     $("#password3").modal("show").addClass("fade");
 }
 
+function showpassword4() {
+    $("#password3").removeClass("fade").modal("hide");
+    $("#password4").modal("show").addClass("fade");
+}
 
 $("#password-ok").on("click", function() {
     event.preventDefault();
@@ -122,8 +126,38 @@ $("#verify-ok").on("click", function() {
     event.preventDefault();
     showpassword3();
 });
-
+$("#new-ok").on("click", function() {
+    event.preventDefault();
+    showpassword4();
+});
 $("#closeMessage-ok").on("click", function() {
     event.preventDefault();
-    $("#password3").removeClass("fade").modal("hide");
+    $("#password4").removeClass("fade").modal("hide");
 });
+
+
+  
+// Sticky cart
+window.onscroll = function() {myFunction()};
+var header = document.getElementById("myHeader");
+var overBlack = document.getElementById("overBlack");
+
+var toScroll = $(document).height() - 980;
+var sticky = header.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset < 100) {
+        header.classList.remove("sticky");
+        header.classList.remove("stickyFoot");
+    }
+    else{
+        if (window.pageYOffset > toScroll) {
+            header.classList.remove("sticky");
+            header.classList.add("stickyFoot");
+        } else {
+            header.classList.add("sticky");
+            header.classList.remove("stickyFoot");
+            $("#scrollerSection").css("max-height","221px");
+        }
+    }
+}
