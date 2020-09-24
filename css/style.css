@@ -556,7 +556,6 @@ textarea:focus, input:focus, input:hover, button:focus {
   display: none; }
 
 .vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > i {
-  margin-right: 12px;
   float: left; }
 
 .vertical-menu-modern.menu-expanded .main-menu .navigation > li > a > i:before {
@@ -984,10 +983,6 @@ textarea:focus, input:focus, input:hover, button:focus {
   color: #6b6f82;
   transition: all 0.2s ease; }
 
-.main-menu.menu-light .navigation li a i,
-.main-menu.menu-light .navigation li a span {
-  transition: all 0.2s ease; }
-
 .main-menu.menu-light .navigation li a span.menu-sub-title {
   color: #bdbfc9; }
 
@@ -1183,10 +1178,6 @@ textarea:focus, input:focus, input:hover, button:focus {
 
 .main-menu.menu-dark .navigation li a {
   color: #172C49;
-  transition: all 0.2s ease; }
-
-.main-menu.menu-dark .navigation li a i,
-.main-menu.menu-dark .navigation li a span {
   transition: all 0.2s ease; }
 
 .main-menu.menu-dark .navigation li a span.menu-sub-title {
@@ -2285,6 +2276,9 @@ body:after {
 
 .brand-text {
   width: 100px; }
+
+.menu-title {
+  padding-left: 10px; }
 
 /* LOGIN */
 #login {
