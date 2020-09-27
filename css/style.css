@@ -2278,7 +2278,8 @@ body:after {
   width: 100px; }
 
 .menu-title {
-  padding-left: 10px; }
+  padding-left: 10px;
+  padding-top: 200px; }
 
 /* LOGIN */
 #login {
