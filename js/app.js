@@ -267,4 +267,3 @@ $('.pinmap').on('click', function(){
 
 
 
-

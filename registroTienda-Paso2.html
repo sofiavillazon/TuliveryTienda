@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+    <!-- BEGIN: Head-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Pedidos</title>
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="css/dropify.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <!-- END: Head-->
+    <!-- BEGIN: Body-->
+    <body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
+        <!-- BEGIN: Header-->
+        <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-light navbar-shadow">
+            <div class="navbar-wrapper">
+                <div class="navbar-header">
+                    <ul class="nav navbar-nav flex-row">
+                        <li class="nav-item mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="icon-toggle-right "></i></a></li>
+                        <li class="nav-item mr-auto">
+                            <a class="navbar-brand" href="index.html">
+                            <img class="brand-logo" alt="f" src="images/logo.png">
+                            <img class="brand-text" alt="g" src="images/logo-text.png">
+                            </a>
+                        </li>
+                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-left font-medium-3 white" ></i></a></li>
+                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-down"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content">
+                    <div class="collapse navbar-collapse" id="navbar-mobile">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand" href="#"><i class="icon-full-screen"></i></a></li>
+                            <li class="dropdown dropdown-user nav-item">
+                                <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown" aria-expanded="false">
+                                    <span class="avatar">
+                                    <img src="images/avatar.png" alt="avatar">
+                                    </span>
+                                    <div class="empresaNombre">
+                                        <h4>EMPRESA</h4>
+                                        <h5>Mis costillitas</h5>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <li class="dropdown dropdown-notification nav-item">
+                                <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><button class="btn btn-blue">CONTRATO</button></a>
+                                <!-- <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="icon-cart"></i><span class="badge badge-pill badge-danger badge-up badge-glow">2</span></a> -->
+                            <li class="dropdown dropdown-notification nav-item mr-3">
+                                <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="icon-notification"></i><span class="badge badge-pill badge-danger badge-up badge-glow">5</span></a>
+                                <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                                    <li class="dropdown-menu-header">
+                                        <h6 class="dropdown-header m-0"><span class="grey darken-2">Notificaciones</span></h6>
+                                        <span class="notification-tag badge badge-danger float-right m-0">5 Nuevos</span>
+                                    </li>
+                                    <li class="scrollable-container media-list w-100 ps ps--active-y">
+                                        <a href="javascript:void(0)">
+                                            <div class="media">
+                                                <div class="media-left align-self-center"><i class="icon-notification icon-bg-circle bg-yellow bg-darken-3 mr-0"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
+                                                    <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                                                    <small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <div class="media">
+                                                <div class="media-left align-self-center"><i class="icon-sale icon-bg-circle bg-blue bg-darken-3 mr-0"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading blue darken-3">Warning notifixation</h6>
+                                                    <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                                                    <small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <div class="media">
+                                                <div class="media-left align-self-center"><i class="icon-notification icon-bg-circle bg-red bg-darken-3 mr-0"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading red darken-3">Warning notifixation</h6>
+                                                    <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                                                    <small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="javascript:void(0)">
+                                            <div class="media">
+                                                <div class="media-left align-self-center"><i class="icon-sale icon-bg-circle bg-blue bg-darken-3 mr-0"></i></div>
+                                                <div class="media-body">
+                                                    <h6 class="media-heading blue darken-3">Warning notifixation</h6>
+                                                    <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p>
+                                                    <small>
+                                                    <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Ver todas</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown dropdown-user nav-item">
+                                <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="images/avatar-s-19.png" alt="avatar"><i></i></span></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Mi perfil</a>
+                                    <a class="dropdown-item" href="#">Configuración</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Salir</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Header-->
+        <!-- BEGIN: Main Menu-->
+        <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
+            <div class="main-menu-content">
+                <ul class="navigation navigation-main" id="main-menu-navigation" >
+                    <li class=" nav-item"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
+                    <li class="open nav-item">
+                        <a href="#"><i class="icon-sale"></i><span class="menu-title">Ventas </span>
+                        </a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="pedidos.html"><i></i><span>Pedido Online</span></a>
+                            </li>
+                            <li><a class="menu-item" href="pedidos.html"><i></i><span>Pedidos Teléfono</span></a>
+                            </li>
+                            <li><a class="menu-item" href="repartos.html"><i></i><span>Reparto de pedidos</span></a>
+                            </li>
+                            <li><a class="menu-item" href="nuevoPedido.html"><i></i><span>NuevoPedido</span></a>
+                            </li>
+                            <li><a class="menu-item" href="historial.html"><i></i><span>Historial</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item"><a href="producto.html"><i class="icon-product"></i><span class="menu-title">Productos</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
+                    </li>
+                    <li class=" nav-item"><a href="reportes.html"><i class="icon-report"></i><span class="menu-title">Reportes</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END: Main Menu-->
+        
+        <!-- BEGIN: Content-->
+        <div class="app-content content">
+            <div class="content-wrapper">
+                <div class="content-body pt-6 px-5 pb-4">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 mt-4 tittleContent">
+                            <h5>COMPLETA EL REGISTRO DE TU TIENDA</h5>
+                            <p>PASO 2: Mi Local</p>
+                        </div>
+                        <div class="col-md-12 steps mb-2">
+                            <ul class="wizardOption">
+                                <li class="active"><a href="#"><div class="itemNumber">1</div><div class="itemText">Mi Comercio</div></a></li>
+                                <li class="active" ><a href="#"><div class="itemNumber">2</div><div class="itemText">Mi Local</div></a></li>
+                                <li><a href="#"><div class="itemNumber">3</div><div class="itemText">Mi Suscripción</div></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 mt-4 mb-0 bgContainer formContent">
+                            <div class="tittle"><span>información sobre mi local</span></div>
+                              
+                            <div class="row">
+                                <div class="col-md-8 mt-2">
+                                    <label for="inputPassword">Título de local</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese el nombre de su local">
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Teléfono del local</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese teléfono">
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-8 mt-2">
+                                    <label for="inputPassword">Dirección de la tienda</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese su dirección">
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Número</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ejm. 125, Mz.2 Lt. 25">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Ciudad</label>
+                                    <div class="selectArrow">
+                                        <select class="custom-select select__field">
+                                            <option selected="">Seleccione su ciudad</option>
+                                            <option value="1">Opción 1</option>
+                                            <option value="2">Opción 2</option>
+                                            <option value="3">Opción 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Provincia</label>
+                                    <div class="selectArrow">
+                                        <select class="custom-select select__field">
+                                            <option selected="">Seleccione su Provincia</option>
+                                            <option value="1">Opción 1</option>
+                                            <option value="2">Opción 2</option>
+                                            <option value="3">Opción 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Distrito</label>
+                                    <div class="selectArrow">
+                                        <select class="custom-select select__field">
+                                            <option selected="">Seleccione su Distrito</option>
+                                            <option value="1">Opción 1</option>
+                                            <option value="2">Opción 2</option>
+                                            <option value="3">Opción 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Referencia</label>
+                                    <div class="selectArrow">
+                                        <select class="custom-select select__field">
+                                            <option selected="">Ingrese una referencia adicional</option>
+                                            <option value="1">Opción 1</option>
+                                            <option value="2">Opción 2</option>
+                                            <option value="3">Opción 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 tittle"><span>COBERTURA</span></div>
+
+                            <div class="row">
+                                <div class="col-md-6 mt-2">
+                                    <label for="inputPassword">Cobertura de atención (KM)</label>
+                                    <div class="selectArrow">
+                                        <select class="custom-select select__field">
+                                            <option selected="">Ingrese la cobertura de atención en KM</option>
+                                            <option value="1">Opción 1</option>
+                                            <option value="2">Opción 2</option>
+                                            <option value="3">Opción 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-4 tittle"><span>Horario de atención</span></div>
+
+                            <div class="col-md-12 f-right my-4">
+                                <button class="btn btn-red-dark btn-xl" data-toggle="modal" data-target="#agregarHorario">+ Agregar horario</button>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="row justify-content-center">
+                                        <div class="timeSet ">
+                                            <div class="number">L</div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">de</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">a</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                        </div>
+                                        <div class="timeSet">
+                                            <div class="number">M</div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">de</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">a</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                        </div>
+
+                                        <div class="timeSet">
+                                            <div class="number">M</div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">de</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">a</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                        </div>
+
+                                        <div class="timeSet">
+                                            <div class="number">J</div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">de</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">a</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                        </div>
+
+                                        <div class="timeSet">
+                                            <div class="number">V</div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">de</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">a</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                        </div>
+                                        <div class="timeSet">
+                                            <div class="number">S</div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">de</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">a</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                        </div>
+
+                                        <div class="timeSet inactive">
+                                            <div class="number">D</div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">de</span>
+                                                <input class="form-control mt-2 formModal" type="time">
+                                            </div>
+                                            <div class="d-flex texta">
+                                                <span class="mt-2 mr-1">a</span>
+                                                <input class="form-control mt-2 formModal" type="time" setappt="18:17" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 f-right mt-4">
+                                <button class="btn btn-red-dark btn-xl" onclick="location.href='registroTienda-Paso3.html'">Actualizar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Content-->
+
+        <!-- ######################### MODAL - agregarHorario  #########################  -->
+     <div class="modal fade modalSideRight modal-right" id="agregarHorario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-close"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="panelPedido detalle pb-5">
+                        <div class="headerPanel">
+                            <div class="">
+                                <h6 class="mt-2 pb-0 mb-0"><strong>Agregar Horario</strong></h6>
+                                <p>Seleccione su horario de atención</p>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-12 mt-3 px-0">
+                            <label class="mb-0 ml-0">Días de atención</label>
+
+                            <div class="row justify-content-center modalSet">
+                                <div class="timeSet">
+                                    <div class="number">L</div>
+                                </div>
+                                <div class="timeSet">
+                                    <div class="number">M</div>
+                                </div>
+                                <div class="timeSet">
+                                    <div class="number">M</div>
+                                </div>
+                                <div class="timeSet">
+                                    <div class="number">J</div>
+                                </div>
+                                <div class="timeSet">
+                                    <div class="number">V</div>
+                                </div>
+                                <div class="timeSet">
+                                    <div class="number">S</div>
+                                </div>
+                                <div class="timeSet inactive">
+                                    <div class="number">D</div>
+                                </div>
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Horario</label>
+                                <div class="form-inline">
+                                    <input class="form-control mt-2 formModal mr-3" type="time">
+                                    <input class="form-control mt-2 formModal" type="time">
+                                </div>
+                            </div>
+                            <div class="f-right mt-4">
+                                <button class="btn btn-blue" >GUARDAR</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+        <script src="js/vendors.min.js"></script>
+
+        <script src="js/app-menu.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/dropify.min.js"></script>
+    
+
+    </body>
+    <!-- END: Body-->
+</html>

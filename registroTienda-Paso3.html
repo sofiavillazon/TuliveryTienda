@@ -11,10 +11,10 @@
         <!-- BEGIN: Theme CSS-->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="css/dropify.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <!-- END: Head-->
-    
     <!-- BEGIN: Body-->
     <body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
         <!-- BEGIN: Header-->
@@ -162,20 +162,88 @@
             <div class="content-wrapper">
                 <div class="content-body pt-6 px-5 pb-4">
                     <div class="row">
-                        <div class="col-md-12 mt-4 mb-0">
-                            <div class=" mt-2">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12 tittleContent">
-                                        <h5>Modales</h5>
-                                        <p>modales y usos</p>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12 f-right">
-                                        <button data-toggle="modal" data-target="#loading" class="f-right px-5 mr-2 py-2 btn btn-blue">
-                                            Loading
-                                        </button>
-                                    </div>
+                        <div class="col-md-12 col-sm-12 mt-4 tittleContent">
+                            <h5>COMPLETA EL REGISTRO DE TU TIENDA</h5>
+                            <p>PASO 3: Mi suscripción</p>
+                        </div>
+                        <div class="col-md-12 steps mb-2">
+                            <ul class="wizardOption">
+                                <li class="active"><a href="#"><div class="itemNumber">1</div><div class="itemText">Mi Comercio</div></a></li>
+                                <li class="active"><a href="#"><div class="itemNumber">2</div><div class="itemText">Mi Local</div></a></li>
+                                <li class="active"><a href="#"><div class="itemNumber">3</div><div class="itemText">Mi Suscripción</div></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 mt-4 mb-4 bgContainer formContent">
+                            <div class="tittle"><span>Realizar mi suscripción</span></div>
+                            
+                            <table class="mt-2">
+                                <tr>
+                                    <td><strong>Fecha de inicio:</strong></td>
+                                    <td> 15 de Setiembre de 2020</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Fin de paríodo gratis:</strong></td>
+                                    <td> 15 de Octubre de 2020</td>
+                                </tr>
+                            </table>
+                            
+                            <br>
+
+                            <div class="card-deck mb-3 text-center px-0">
+                                <div class="card cardPro mb-4  mx-0">
+                                  <div class="card-body cardInfoBanner">
+                                    <div class="message">Plan Actual</div>
+                                    <h4>Plan Básico</h4>
+                                    <p>Precio mensual por tienda</p>
+                                    <div class="separador"></div>
+                                    <ul class="listSuscribe">
+                                        <li>Tienda digital web</li>
+                                        <li>Tienda digital en app</li>
+                                        <li>Recibe soporte para el manejo de tu contenido</li>
+                                    </ul>
                                     
+                                    <h1><strong>S/. 30.00</strong><span>/mes</span></h1>
+                                  </div>
                                 </div>
+                                <div class="card cardPro mb-4  mx-0">
+                                    
+                                    <div class="card-body cardInfoBanner active">
+                                      <div class="message">Plan Actual</div>
+                                      <h4>Plan Estándar</h4>
+                                      <p>Precio mensual por tienda</p>
+                                      <div class="separador"></div>
+                                      <ul class="listSuscribe">
+                                          <li>Tienda digital web</li>
+                                          <li>Tienda digital en app</li>
+                                          <li>Envía emails de marketing con tus promociones</li>
+                                          <li>Envía notificaciones al celular con tus promociones</li>
+                                          <li>Recibe soporte para el manejo de tu contenido</li>
+                                      </ul>
+                                      <h1><strong>S/. 60.00</strong><span>/mes</span></h1>
+                                    </div>
+                                  </div>
+                    
+                                  <div class="card cardPro mb-4  mx-0">
+                                    <div class="card-body cardInfoBanner ">
+                                      <div class="message">Plan Actual</div>
+                                      <h4>Plan Premium</h4>
+                                      <p>Precio mensual contrato por 1 año</p>
+                                      <div class="separador"></div>
+                                      <ul class="listSuscribe">
+                                        <li>Tienda digital web</li>
+                                        <li>Tienda digital en app</li>
+                                        <li>Acceso a tu propio APP (Android, iOS) para resaltar tu marca</li>
+                                        <li>Envía emails de marketing con tus promociones</li>
+                                        <li>Envía notificaiones al celular con tus promociones</li>
+                                        <li>Recibe soporte para el manejo de tu contenido</li>
+                                    </ul>
+                                      <h1><strong>S/. 500.00</strong><span>/mes</span></h1>
+                                    </div>
+                                  </div>
+                              </div>
+
+                            <div class="col-md-12 f-right mt-4">
+                                <button class="btn btn-red-dark btn-xl">Continuar</button>
                             </div>
                         </div>
                     </div>
@@ -184,31 +252,14 @@
         </div>
         <!-- END: Content-->
 
-        <!-- ######################### MODAL - loading  #########################  -->
-        <div class="modal fade " id="loading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="tittleImp mb-3 text-center">
-                            <h5 class="mt-2 mb-0 boldTittle">¡Cargando!</h5>
-                            <!-- <p class="mb-3 boldTittle">Ingresó un pedido online, recuerda hacerle seguimiento</p> -->
-                            <!-- <img src="images/confirm.png" alt=""> -->
-                            <img class="mt-4 mb-4" src="images/loading.svg" />
-                        </div>
-                        <div class="row">
-                            <div class="text-center fullwd mt-1">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    
         <script src="js/vendors.min.js"></script>
+
         <script src="js/app-menu.js"></script>
         <script src="js/app.js"></script>
-        
+        <script src="js/dropify.min.js"></script>
+    
+
     </body>
     <!-- END: Body-->
 </html>

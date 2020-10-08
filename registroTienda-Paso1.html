@@ -11,10 +11,10 @@
         <!-- BEGIN: Theme CSS-->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="css/dropify.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <!-- END: Head-->
-    
     <!-- BEGIN: Body-->
     <body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
         <!-- BEGIN: Header-->
@@ -162,21 +162,115 @@
             <div class="content-wrapper">
                 <div class="content-body pt-6 px-5 pb-4">
                     <div class="row">
-                        <div class="col-md-12 mt-4 mb-0">
-                            <div class=" mt-2">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12 tittleContent">
-                                        <h5>Modales</h5>
-                                        <p>modales y usos</p>
+                        <div class="col-md-12 col-sm-12 mt-4 tittleContent">
+                            <h5>COMPLETA EL REGISTRO DE TU TIENDA</h5>
+                            <p>PASO 1: Mi Comercio</p>
+                        </div>
+                        <div class="col-md-12 steps mb-2">
+                            <ul class="wizardOption">
+                                <li class="active"><a href="#"><div class="itemNumber">1</div><div class="itemText">Mi Comercio</div></a></li>
+                                <li><a href="#"><div class="itemNumber">2</div><div class="itemText">Mi Local</div></a></li>
+                                <li><a href="#"><div class="itemNumber">3</div><div class="itemText">Mi Suscripción</div></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-12 mt-4 mb-0 bgContainer formContent">
+                            <div class="tittle"><span>Información sobre mi comercio</span></div>
+                              
+                            <div class="row">
+                                <div class="col-md-12 mt-2">
+                                    <label for="inputPassword">Plantilla de tienda</label>
+                                    <ul class="bannerStore">
+                                        <li class="active"><a href="#"><img src="images/banner1.png" alt=""><span>Full banner</span></a></li>
+                                        <li><a href="#"><img src="images/banner2.png" alt=""><span>Compacta</span></a></li>
+                                        <li><a href="#"><img src="images/banner3.png" alt=""><span>Full texto</span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Nombre Comercial</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese el nombre comercial de su emrpresa">
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">RUC</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese su RUC">
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Razón Social</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese su Razón social">
+                                </div>
+
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Razón Social</label>
+                                    <textarea class="form-control formModal" placeholder="Ingrese descripción sobre su tienda" name="" id="" cols="30" rows="4"></textarea>
+                                </div>
+                                <div class="col-md-8 mt-2">
+                                    <div class="row">
+                                        <div class="col-md-12 mt-2">
+                                            <label for="inputPassword">Direccion Tulivery</label>
+                                            <div class="d-flex ">
+                                                <span class="mt-2 mr-1">www.tulivery.com/ </span>
+                                                <input type="text" class="form-control formModal" placeholder="Ingrese el link de su empresa">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 mt-2">
+                                            <label for="inputPassword">Enlaces Facebook</label>
+                                            <input type="text" class="form-control formModal" placeholder="Ingrese link de Facebook">
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-12 f-right">
-                                        <button data-toggle="modal" data-target="#loading" class="f-right px-5 mr-2 py-2 btn btn-blue">
-                                            Loading
-                                        </button>
-                                    </div>
-                                    
                                 </div>
                             </div>
+
+                            <div class="mt-4 tittle"><span>Información sobre imágenes</span></div>
+                            
+                            <div class="row">
+                                <div class="col-md-2 mt-2">
+                                    <label for="inputPassword">Logo</label>
+                                    <input type="file" class="logoInput" data-min-height="400" />
+                                </div>
+                                <div class="col-md-5 mt-2">
+                                    <label for="inputPassword">Banner compacto</label>
+                                    <input type="file" class="logoInput" data-min-height="400" />
+                                </div>
+                                <div class="col-md-5 mt-2">
+                                    <label for="inputPassword">Banner completo</label>
+                                    <input type="file" class="logoInput" data-min-height="400" />
+                                </div>
+                            </div>
+
+                            <div class="mt-4 tittle"><span>Información sobre los precios</span></div>
+                            
+                            <div class="row">
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">¿Cómo vas cobrar?</label>
+                                    <div class="selectArrow">
+                                        <select class="custom-select select__field">
+                                            <option selected="">Seleccione el medio de pago</option>
+                                            <option value="1">Tienda 1</option>
+                                            <option value="2">Tienda 2</option>
+                                            <option value="3">Tienda 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">Valor mínimo por pedido</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese el valor mínimo">
+                                </div>
+                                <div class="col-md-4 mt-2">
+                                    <label for="inputPassword">¿Cuánto cobrarás por delivery?</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese el valor">
+                                </div>
+                                <div class="col-md-2 mt-2">
+                                    <label for="inputPassword">Logo</label>
+                                    <input type="file" class="logoInput" data-min-height="400" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-12 f-right mt-4">
+                                <button class="btn btn-red-dark btn-xl"onclick="location.href='registroTienda-Paso2.html'">Actualizar</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -184,31 +278,47 @@
         </div>
         <!-- END: Content-->
 
-        <!-- ######################### MODAL - loading  #########################  -->
-        <div class="modal fade " id="loading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="tittleImp mb-3 text-center">
-                            <h5 class="mt-2 mb-0 boldTittle">¡Cargando!</h5>
-                            <!-- <p class="mb-3 boldTittle">Ingresó un pedido online, recuerda hacerle seguimiento</p> -->
-                            <!-- <img src="images/confirm.png" alt=""> -->
-                            <img class="mt-4 mb-4" src="images/loading.svg" />
-                        </div>
-                        <div class="row">
-                            <div class="text-center fullwd mt-1">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    
         <script src="js/vendors.min.js"></script>
+
         <script src="js/app-menu.js"></script>
         <script src="js/app.js"></script>
+        <script src="js/dropify.min.js"></script>
         
+        <script>
+            $(document).ready(function(){
+                // Translated
+                $('.logoInput').dropify({
+                    messages: {
+                        default: 'Logo',
+                        info: 'png, 600x350',
+                        replace: 'Logo',
+                        remove:  'Eliminar',
+                        error:   'No se subió el archivo'
+                    }
+                });
+                $('.compactoInput').dropify({
+                    messages: {
+                        default: 'Logo',
+                        info: 'png, 600x350',
+                        replace: 'Logo',
+                        remove:  'Eliminar',
+                        error:   'No se subió el archivo'
+                    }
+                });
+                $('.completoInput').dropify({
+                    messages: {
+                        default: 'Logo',
+                        info: 'png, 600x350',
+                        replace: 'Logo',
+                        remove:  'Eliminar',
+                        error:   'No se subió el archivo'
+                    }
+                });
+            });
+        </script>
+
+
     </body>
     <!-- END: Body-->
 </html>

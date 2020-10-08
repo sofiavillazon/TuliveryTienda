@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr">
+<html class="loading" lang="en">
     <!-- BEGIN: Head-->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,7 +14,6 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <!-- END: Head-->
-    
     <!-- BEGIN: Body-->
     <body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
         <!-- BEGIN: Header-->
@@ -128,7 +127,7 @@
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" >
                     <li class=" nav-item"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
-                    <li class="open nav-item">
+                    <li class=" nav-item">
                         <a href="#"><i class="icon-sale"></i><span class="menu-title">Ventas </span>
                         </a>
                         <ul class="menu-content">
@@ -148,7 +147,7 @@
                     </li>
                     <li class=" nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
                     </li>
-                    <li class=" nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
+                    <li class="open nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
                     </li>
                     <li class=" nav-item"><a href="reportes.html"><i class="icon-report"></i><span class="menu-title">Reportes</span></a>
                     </li>
@@ -156,25 +155,106 @@
             </div>
         </div>
         <!-- END: Main Menu-->
-        
         <!-- BEGIN: Content-->
         <div class="app-content content">
             <div class="content-wrapper">
                 <div class="content-body pt-6 px-5 pb-4">
                     <div class="row">
-                        <div class="col-md-12 mt-4 mb-0">
+                        <div class="col-md-12 mt-4 mb-0 bgContainer ">
                             <div class=" mt-2">
                                 <div class="row">
-                                    <div class="col-md-6 col-sm-12 tittleContent">
-                                        <h5>Modales</h5>
-                                        <p>modales y usos</p>
+                                    <div class="col-md-7 col-sm-12 tittleContent">
+                                        <h5>HISTORIAL DE PEDIDOS</h5>
+                                        <p>Consulte información de pedidos</p>
                                     </div>
-                                    <div class="col-md-6 col-sm-12 f-right">
-                                        <button data-toggle="modal" data-target="#loading" class="f-right px-5 mr-2 py-2 btn btn-blue">
-                                            Loading
-                                        </button>
+                                    <div class="col-md-2 col-sm-12 f-right mt-1">
+                                        <button data-toggle="modal" data-target="#nuevoPedido" class="btn btn-red-dark  my-2 mr-2">nuevo</button>
                                     </div>
-                                    
+                                    <div class="col-md-3 col-sm-12 f-right mt-1">
+                                        <div class="input-group search">
+                                            <div class="right-inner-addon input-container">
+                                                <i class="icon-search"></i>
+                                                <input type="text" class="form-control" placeholder="Buscar usuarios"/>
+                                            </div>
+                                        </div>
+                                        <!-- <input type="text" class="form-control" placeholder="Ingrese su usuario"> -->
+                                    </div>
+                                
+                                    <div class="col-md-12">
+                                        <div class="separador mt-0"></div>
+                                    </div>
+
+                                    <div class="col-md-12 mt-3 responsiveTable">
+                                        <table class="tableTulivery">
+                                            <tbody>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Título</th>
+                                                    <th>Estado</th>
+                                                    <th>público?</th>
+                                                    <th>Orden</th>
+                                                    <th>Estado</th>
+                                                    <th>Editar</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>1000</td>
+                                                    <td>Combos</td>
+                                                    <td>Estándar</td>
+                                                    <td>Sí</td>
+                                                    <td>1</td>
+                                                    <td>Activo</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoPedido" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1000</td>
+                                                    <td>Combos</td>
+                                                    <td>Estándar</td>
+                                                    <td>Sí</td>
+                                                    <td>1</td>
+                                                    <td>Activo</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoPedido" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1000</td>
+                                                    <td>Combos</td>
+                                                    <td>Estándar</td>
+                                                    <td>Sí</td>
+                                                    <td>1</td>
+                                                    <td>Activo</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoPedido" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1000</td>
+                                                    <td>Combos</td>
+                                                    <td>Estándar</td>
+                                                    <td>Sí</td>
+                                                    <td>1</td>
+                                                    <td>Activo</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoPedido" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1000</td>
+                                                    <td>Combos</td>
+                                                    <td>Estándar</td>
+                                                    <td>Sí</td>
+                                                    <td>1</td>
+                                                    <td>Activo</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoPedido" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1000</td>
+                                                    <td>Combos</td>
+                                                    <td>Estándar</td>
+                                                    <td>Sí</td>
+                                                    <td>1</td>
+                                                    <td>Activo</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoPedido" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+
+                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -184,31 +264,73 @@
         </div>
         <!-- END: Content-->
 
-        <!-- ######################### MODAL - loading  #########################  -->
-        <div class="modal fade " id="loading" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <div class="tittleImp mb-3 text-center">
-                            <h5 class="mt-2 mb-0 boldTittle">¡Cargando!</h5>
-                            <!-- <p class="mb-3 boldTittle">Ingresó un pedido online, recuerda hacerle seguimiento</p> -->
-                            <!-- <img src="images/confirm.png" alt=""> -->
-                            <img class="mt-4 mb-4" src="images/loading.svg" />
-                        </div>
-                        <div class="row">
-                            <div class="text-center fullwd mt-1">
-
+        
+     <!-- ######################### MODAL - Más informacón  #########################  -->
+     <div class="modal fade modalSideRight modal-right" id="nuevoPedido" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-close"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="panelPedido detalle pb-5">
+                        <div class="headerPanel">
+                            <div class="">
+                                <h6 class="mt-2 pb-0 mb-0 w-100"><strong>Crear categoría</strong></h6>
+                                <p>Edición de categoría</p>
                             </div>
+                            
                         </div>
+                        
+                        <div class="col-md-12 mt-3 px-0">
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Título</label>
+                                <input type="text" class="form-control formModal" placeholder="Ingrese título">
+                            </div>
+                            
+                            <div class="input-group search mt-2">
+                                <label for="inputPassword">Tipo de categoría</label>
+                                <div class="right-inner-addon input-container selectArrow">
+                                    <select class="custom-select select__field">
+                                        <option selected="">Estándar</option>
+                                        <option value="1">Estándar 1</option>
+                                        <option value="2">Estándar 2</option>
+                                        <option value="3">Estándar 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Es pública</label>
+                                <input type="password" class="form-control formModal" placeholder="Sí">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Prioridad</label>
+                                <input type="text" class="form-control formModal" placeholder="1">
+                            </div>
+                            <div class="col-md-12 form-label-group mt-3 pl-0 ">
+                                <label for="inputPassword">Estado </label>
+                                <label class="switch">
+                                    <input type="checkbox" checked="">
+                                    <span class="slider round"></span>
+                                </label>   
+                                
+                            </div>
+                            <div class="col-md-12 f-right mt-4">
+                                <button class="btn btn-blue">GUARDAR</button>
+                            </div>
+
+                        </div>
+                       
                     </div>
+                  
                 </div>
             </div>
         </div>
+    </div>
 
         <script src="js/vendors.min.js"></script>
         <script src="js/app-menu.js"></script>
         <script src="js/app.js"></script>
-        
     </body>
     <!-- END: Body-->
 </html>
