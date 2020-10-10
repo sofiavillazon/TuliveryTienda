@@ -303,7 +303,7 @@
             if (((pageHeight - ddTop) - ddHeight - 28) < 1) {
               var maxHeight = (pageHeight - ddTop - 25);
               if ($("body").data("open") === "hover") {
-                $(this).find('.dropdown-menu').css({ 'max-height': maxHeight + 'px', 'overflow-y': 'auto', 'overflow-x': 'hidden' });
+                $(this).find('.dropdown-menu').css({ 'max-height': maxHeight + 'px', 'overflow-y': 'scroll', 'overflow-x': 'hidden' });
                 var mouseEnterPS = new PerfectScrollbar('li.dropdown-submenu.show .dropdown-menu', {
                   wheelPropagation: false
                 });
@@ -849,7 +849,7 @@
       $(".navigation-main")
         .on("mouseenter.app.menu", "li", function () {
           var $this = $(this);
-          $(".hover", ".navigation-main").removeClass("hover");
+         
           if (
             ($body.hasClass("menu-collapsed") &&
               $body.data("menu") != "vertical-menu-modern") ||
@@ -1051,23 +1051,6 @@
         }
       }
 
-      $(".main-menu-content").on("mouseleave", function () {
-        if (
-          $body.hasClass("menu-collapsed") ||
-          $body.data("menu") == "vertical-compact-menu"
-        ) {
-          $(".main-menu-content")
-            .children("span.menu-title")
-            .remove();
-          $(".main-menu-content")
-            .children("a.menu-title")
-            .remove();
-          $(".main-menu-content")
-            .children("ul.menu-content")
-            .remove();
-        }
-        $(".hover", ".navigation-main").removeClass("hover");
-      });
 
       // If list item has sub menu items then prevent redirection.
       $(".navigation-main li.has-sub > a").on("click", function (e) {

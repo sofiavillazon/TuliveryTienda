@@ -674,8 +674,6 @@ textarea:focus, input:focus, input:hover, button:focus {
 .vertical-menu-modern.menu-expanded .navbar .navbar-container {
   margin-left: 260px; }
 
-.vertical-menu-modern.menu-expanded .navbar .navbar-brand .brand-text {
-  animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein; }
 
 .vertical-menu-modern.menu-expanded .main-menu {
   width: 260px; }
@@ -743,7 +741,6 @@ textarea:focus, input:focus, input:hover, button:focus {
 
 .vertical-menu-modern.menu-collapsed .main-menu {
   width: 60px;
-  transition: 300ms ease all;
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0); }
   .vertical-menu-modern.menu-collapsed .main-menu .main-menu-header .media- .media-heading,
@@ -767,7 +764,8 @@ textarea:focus, input:focus, input:hover, button:focus {
       text-overflow: inherit;
       padding: 10px 0px 10px 18px; }
       .vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a > span {
-        animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadeout; }
+        padding: 10px;  
+       }
         .vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a > span.badge {
           float: none !important; }
       .vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a i {
@@ -820,8 +818,7 @@ textarea:focus, input:focus, input:hover, button:focus {
 @media (min-width: 576px) {
   .vertical-menu-modern.menu-collapsed.menu-flipped .main-menu {
     right: 0; }
-    .vertical-menu-modern.menu-collapsed.menu-flipped .main-menu span.menu-title {
-      right: 60px; }
+   
     .vertical-menu-modern.menu-collapsed.menu-flipped .main-menu ul.menu-content {
       right: 60px;
       left: inherit; } }
@@ -837,11 +834,6 @@ textarea:focus, input:focus, input:hover, button:focus {
   margin: 0;
   margin-right: 60px; }
 
-[data-textdirection="rtl"] .vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a {
-  padding: 14px 16px !important; }
-
-[data-textdirection="rtl"] .vertical-menu-modern.menu-collapsed .main-menu .navigation > li.navigation-header .la-ellipsis-h {
-  padding: 12px 0px; }
 
 @media (min-width: 992px) {
   .vertical-menu-modern .main-menu {
@@ -954,20 +946,11 @@ textarea:focus, input:focus, input:hover, button:focus {
       float: left; }
       .vertical-overlay-menu .main-menu .navigation > li > a > i:before {
         transition: 200ms ease all; }
-  .vertical-overlay-menu .main-menu .navigation > li.hover > a {
-    padding-left: 36px; }
-  .vertical-overlay-menu .main-menu .navigation > li ul li > a {
-    padding-left: 68px; }
   .vertical-overlay-menu .main-menu .navigation > li .active > a {
     padding-left: 54px; }
   .vertical-overlay-menu .main-menu .navigation > li ul .open > ul li > a {
     padding-left: 74px; }
-  .vertical-overlay-menu .main-menu .navigation > li ul .open > ul li:not(.active):hover > a {
-    padding-left: 78px; }
-  .vertical-overlay-menu .main-menu .navigation > li.open > ul > li:hover > a {
-    padding-left: 72px; }
-  .vertical-overlay-menu .main-menu .navigation > li.open > ul > li:hover.active > a {
-    padding-left: 54px; }
+
   .vertical-overlay-menu .main-menu .navigation li.has-sub > a:not(.mm-next):after {
     content: "\e903";
     font-family: "tulivery";
@@ -982,8 +965,7 @@ textarea:focus, input:focus, input:hover, button:focus {
     top: 11px; }
   .vertical-overlay-menu .main-menu .navigation li.open > a:not(.mm-next):after {
     transform: rotate(90deg); }
-  .vertical-overlay-menu .main-menu .navigation li.has-sub > a:not(.mm-next):after {
-    right: 34px; }
+
 
 .vertical-overlay-menu.menu-open .main-menu {
   opacity: 1;
@@ -1077,10 +1059,6 @@ textarea:focus, input:focus, input:hover, button:focus {
         .main-menu.menu-light .navigation > li.open > a {
           color: #545766;
           border-right: 4px solid $blue; }
-        .main-menu.menu-light .navigation > li.open > li.hover > a {
-          transform: translateX(12px); }
-        .main-menu.menu-light .navigation > li.open > li.hover.active > a {
-          transform: translateX(0px); }
         .main-menu.menu-light .navigation > li.menu-collapsed-open > a {
           color: #545766;
           border-right: 4px solid $blue; }
@@ -1204,22 +1182,25 @@ textarea:focus, input:focus, input:hover, button:focus {
         .main-menu.menu-dark .navigation li a span.menu-sub-title {
           color: white; }
       .main-menu.menu-dark .navigation > li {
+        top: 0px;
         padding: 0; }
         .main-menu.menu-dark .navigation > li > a {
           padding: 15px 30px 15px 18px; }
           .main-menu.menu-dark .navigation > li > a .label {
-            margin-top: 4px;
+            margin-top: 15px;
             margin-right: 5px; }
           .main-menu.menu-dark .navigation > li > a i {
             position: relative;
-            top: 3px; }
+            top: 0px; 
+            height: 30px!important;
+            padding: 0px !important;
+          }
         
         .main-menu.menu-dark .navigation > li.open > a {
           color: $blue;
           font-weight: 500;
           border-right: 4px solid $blue; }
-       
-        .main-menu.menu-dark .navigation > li:not(.open) > ul {
+         .main-menu.menu-dark .navigation > li:not(.open) > ul {
           display: none; }
         .main-menu.menu-dark .navigation > li.hover > a, .main-menu.menu-dark .navigation > li:hover > a, .main-menu.menu-dark .navigation > li.active > a {
           color: $blue; }
@@ -1275,8 +1256,7 @@ textarea:focus, input:focus, input:hover, button:focus {
               background-color: transparent; }
         .main-menu.menu-dark .navigation > li > ul {
           background: $white; }
-        .main-menu.menu-dark .navigation > li.hover > a {
-          padding-left: 24px; }
+       
         .main-menu.menu-dark .navigation > li.active > a {
           padding: 12px 17px 12px 17px; }
     .main-menu.menu-dark.expanded .navigation > li.active > a {
@@ -2107,10 +2087,16 @@ body:after {
  width: 100px;
 }
 
-
+.main-menu.menu-dark .navigation > li > a{
+  height: 50px;
+  margin-top: 12px;
+}
 .menu-title {
   padding-left: 10px;
-  padding-top: 200px;
+  padding-top: 5px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
 }
 
 /* LOGIN */
@@ -2519,6 +2505,13 @@ body:after {
 .tableTulivery{
   width: 100%;
   font-size: 14px;
+  thead tr td, thead tr th{
+    padding: 5px 0px !important;
+    font-weight: bold;
+    text-align: center;
+    color: $grey;
+    border-bottom: 1px solid $grey;
+  }
   tr{
     // border: 1px solid $gray;
     text-align: left;
@@ -3834,4 +3827,35 @@ input:checked + .slider:before {
   li.active, li:hover{
     opacity: 1;
   }
+}
+.dropdown-toggle.optionSelect{
+  background-color: $white;
+  border: none;
+  img{
+    width: 20px;
+  }
+}
+.dropdown-toggle.optionSelect:hover,.dropdown-toggle.optionSelect:focus{
+  background-color: $white;
+  border: none!important;
+  img{
+    opacity: 0.5;
+  }
+}
+.dropdown-toggle.optionSelect::after {
+  display: none!important;
+
+}
+
+
+.dropdown-menu.show {
+  position: absolute;
+  transform: translate3d(-91px, 38px, 0px)!important;
+  top: 0px;
+  left: 0px;
+  will-change: transform;
+}
+
+.dropdown .dropdown-menu {
+  border: 1px solid $blue;
 }
