@@ -9,7 +9,6 @@
         <!-- BEGIN: Vendor CSS-->
         <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
         <!-- BEGIN: Theme CSS-->
-        <link rel="stylesheet" href="css/vanillabox.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -144,11 +143,11 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="open nav-item"><a href="producto.html"><i class="icon-product"></i><span class="menu-title">Productos</span></a>
+                    <li class=" nav-item"><a href="producto.html"><i class="icon-product"></i><span class="menu-title">Productos</span></a>
                     </li>
                     <li class=" nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
                     </li>
-                    <li class=" nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
+                    <li class="open nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
                     </li>
                     <li class=" nav-item"><a href="reportes.html"><i class="icon-report"></i><span class="menu-title">Reportes</span></a>
                     </li>
@@ -164,149 +163,92 @@
                         <div class="col-md-12 mt-4 mb-0 bgContainer ">
                             <div class=" mt-2">
                                 <div class="row">
-                                    <div class="col-md-7 col-sm-12 tittleContent">
-                                        <h5>LISTA DE PRODUCTOS</h5>
-                                        <p>Edición de productos</p>
+                                    <div class="col-md-12 col-sm-12 tittleContent">
+                                        <h5>FACTURAS</h5>
+                                        <p>Detalle de facturas generadas</p>
                                     </div>
-                                    <div class="col-md-3 col-sm-12 f-right mt-1">
-                                        <div class="input-group search">
-                                            <div class="right-inner-addon input-container">
-                                                <i class="icon-search"></i>
-                                                <input type="text" class="form-control" placeholder="Buscar productos"/>
-                                            </div>
-                                        </div>
-                                        <!-- <input type="text" class="form-control" placeholder="Ingrese su usuario"> -->
-                                    </div>
-                                    <div class="col-md-2 col-sm-12 f-right mt-1">
-                                        <select class="custom-select">
-                                            <option selected>Todos</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
-                                          </select>
-                                    </div>
+                                   
                                     <div class="col-md-12">
                                         <div class="separador mt-0"></div>
                                     </div>
-                                    <div class="col-md-12 mt-3 mb-2 ">
-                                        <div class="menu-wrapper">
-                                            <ul class="menu categoryLine">
-                                                <a><li class="item2"><h3 class="title">Promoción</h3></li></a>
-                                                <a><li class="item2 active"><h3 class="title">Piqueos</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Costillas</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Carnes</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Papi Julio</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Carnes</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Cortes</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Angus</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Pescado</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Promoción</h3></li></a>
-                                                <a><li class="item2 active"><h3 class="title">Piqueos</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Costillas</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Carnes</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Papi Julio</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Carnes</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Cortes</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Angus</h3></li></a>
-                                                <a><li class="item2"><h3 class="title">Pescado</h3></li></a>
-                                            </ul>
-                                            <div class="paddles">
-                                                <div class="left-paddle paddle hidden">
-                                                    <i class="icon-circle-arrow-left"></i>
+                                    <div class="col-md-12">
+                                        <div class="backgroundgrey pt-3 px-4 pb-3 my-3">
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-12 f-right mt-1">
+                                                    <div class="input-group search">
+                                                        <div class="right-inner-addon input-container">
+                                                            <i class="icon-calendar"></i>
+                                                            <input type="text" class="form-control" placeholder="Desde"/>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="right-paddle paddle">
-                                                    <i class="icon-circle-arrow-right"></i>
+                                                <div class="col-md-2 col-sm-12 f-right mt-1">
+                                                    <div class="input-group search">
+                                                        <div class="right-inner-addon input-container">
+                                                            <i class="icon-calendar"></i>
+                                                            <input type="text" class="form-control" placeholder="Hasta"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-8 col-sm-12 mt-1 f-right">
+                                                    <div class="input-group search">
+                                                        <div class="right-inner-addon input-container">
+                                                            <i class="icon-search"></i>
+                                                            <input type="text" class="form-control" placeholder="Buscar facturas"/>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <input type="text" class="form-control" placeholder="Ingrese su usuario"> -->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+
+                                   
                                     <div class="col-md-12 mt-3 responsiveTable">
                                         <table class="tableTulivery">
-                                            <thead>
-                                                <tr>
-                                                    <th>Pedido</th>
-                                                    <th>Categoría</th>
-                                                    <th>Descriptivo</th>
-                                                    <th>Tamaño</th>
-                                                    <th>Precio</th>
-                                                    <th>Estado</th>
-                                                    <th>Opciones</th>
-                                                </tr>
-                                            </thead>
                                             <tbody>
                                                 <tr>
-                                                    <td>
-                                                        <div class="responsiveIng" style="background-image: url(images/img-bg.png);">
-                                                        </div>
-                                                    </td>
-                                                    <td>Pollo a la brasa</td>
-                                                    <td>Delicioso pollo con...</td>
-                                                    <td>Familiar</td>
-                                                    <td>S/. 45.00</td>
-                                                    <td>Activo</td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-light optionSelect dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                              <img src="images/points-02.svg" alt=""> 
-                                                            </button>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                              <a class="dropdown-item" href="#">Item 1</a>
-                                                              <a class="dropdown-item" href="#">Item 2</a>
-                                                              <a class="dropdown-item" href="#">Item 3</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <th>Fecha</th>
+                                                    <th>N° Factura</th>
+                                                    <th>Concepto</th>
+                                                    <th>Importe</th>
+                                                    <th>Comprobante</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>30/08/2020</td>
+                                                    <td>104-0002526</td>
+                                                    <td>Suscripción mensual 1 tienda</td>
+                                                    <td>S/. 30.00</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoUsuario" class="btn btn-blue my-2 mr-2">DESCARGAR</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>30/08/2020</td>
+                                                    <td>104-0002526</td>
+                                                    <td>Suscripción mensual 1 tienda</td>
+                                                    <td>S/. 30.00</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoUsuario" class="btn btn-blue my-2 mr-2">DESCARGAR</button></td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>
-                                                        <div class="responsiveIng" style="background-image: url(images/img-bg.png);">
-                                                        </div>
-                                                    </td>
-                                                    <td>Pollo a la brasa</td>
-                                                    <td>Delicioso pollo con...</td>
-                                                    <td>Familiar</td>
-                                                    <td>S/. 45.00</td>
-                                                    <td>Activo</td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-light optionSelect dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                              <img src="images/points-02.svg" alt=""> 
-                                                            </button>
-                                                            <div class="dropdown-menu tableOp" aria-labelledby="dropdownMenuButton">
-                                                              <a class="dropdown-item" href="#">Item 1</a>
-                                                              <a class="dropdown-item" href="#">Item 2</a>
-                                                              <a class="dropdown-item" href="#">Item 3</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td>30/08/2020</td>
+                                                    <td>104-0002526</td>
+                                                    <td>Suscripción mensual 1 tienda</td>
+                                                    <td>S/. 30.00</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoUsuario" class="btn btn-blue my-2 mr-2">DESCARGAR</button></td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td>
-                                                        <div class="responsiveIng" style="background-image: url(images/img-bg.png);">
-                                                        </div>
-                                                    </td>
-                                                    <td>Pollo a la brasa</td>
-                                                    <td>Delicioso pollo con...</td>
-                                                    <td>Familiar</td>
-                                                    <td>S/. 45.00</td>
-                                                    <td>Activo</td>
-                                                    <td>
-                                                        <div class="dropdown">
-                                                            <button class="btn btn-light optionSelect dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                              <img src="images/points-02.svg" alt=""> 
-                                                            </button>
-                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                              <a class="dropdown-item" href="#">Item 1</a>
-                                                              <a class="dropdown-item" href="#">Item 2</a>
-                                                              <a class="dropdown-item" href="#">Item 3</a>
-                                                            </div>
-                                                        </div>
-                                                    </td>
+                                                    <td>30/08/2020</td>
+                                                    <td>104-0002526</td>
+                                                    <td>Suscripción mensual 1 tienda</td>
+                                                    <td>S/. 30.00</td>
+                                                    <td><button data-toggle="modal" data-target="#nuevoUsuario" class="btn btn-blue my-2 mr-2">DESCARGAR</button></td>
                                                 </tr>
 
-                                               
+
+                                             
                                             </tbody>
                                         </table>
                                     </div>
@@ -319,63 +261,10 @@
         </div>
         <!-- END: Content-->
 
-        
-     <!-- ######################### MODAL - Más informacón  #########################  -->
-     <div class="modal fade modalSideRight modal-right" id="nuevoUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="icon-close"></i>
-                </button>
-                <div class="modal-body">
-                    <div class="panelPedido detalle pb-5">
-                        <div class="headerPanel">
-                            <div class="left">
-                                <h6 class="mt-2 pb-0 mb-0"><strong>Editar Producto N° 2051</strong></h6>
-                                <p>Edición del producto</p>
-                            </div>
-                            
-                        </div>
-                        
-                        <div class="col-md-12 mt-3 px-0">
-                            <div class="form-label-group mt-2">
-                                <label for="inputPassword">Nombre</label>
-                                <input type="text" class="form-control formModal" placeholder="Ingrese el nombre del cliente">
-                            </div>
-                            <div class="form-label-group mt-2">
-                                <label for="inputPassword">Precio</label>
-                                <input type="text" class="form-control formModal" placeholder="Ingrese Precio">
-                            </div>
-                            <div class="form-label-group mt-2">
-                                <label for="inputPassword">Precio</label>
-                                <!-- <input type="text" class="form-control formModal" placeholder="Ingrese PRecio"> -->
-                                <textarea class="form-control formModal" name="textarea" placeholder="Ingrese descripción del producto"  rows="4" cols="50"></textarea>
-                            </div>
-                            <div class="form-label-group mt-4">
-                                <label for="inputPassword">Estado</label>
-                                <label class="switch">
-                                    
-                                    <input type="checkbox" checked>
-                                    <span class="slider round"></span>
-                                </label>    
-                            </div>
-                            
-                            <div class="f-right mt-4">
-                                <button class="btn btn-blue">ACTUALIZAR</button>
-                            </div>
-
-                        </div>
-                       
-                    </div>
-                  
-                </div>
-            </div>
-        </div>
-    </div>
+  
 
         <script src="js/vendors.min.js"></script>
         <script src="js/app-menu.js"></script>
-        <script type="text/javascript" src="js/jquery.vanillabox-0.1.7.min.js"></script>
         <script src="js/app.js"></script>
     </body>
     <!-- END: Body-->

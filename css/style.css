@@ -3466,7 +3466,7 @@ input:checked + .slider:before {
 .btn-xl {
   font-size: 15px !important;
   padding: 6px 40px;
-  text-transform: capitalize; }
+  text-transform: inherit; }
 
 .card.cardPro {
   border: 1px solid #F5F9FC !important;
@@ -3722,12 +3722,38 @@ input:checked + .slider:before {
 .dropdown-toggle.optionSelect::after {
   display: none !important; }
 
-.dropdown-menu.show {
+.tableOp.show {
   position: absolute;
   transform: translate3d(-91px, 38px, 0px) !important;
   top: 0px;
   left: 0px;
   will-change: transform; }
 
-.dropdown .dropdown-menu {
+.dropdown .dropdown-menu.tableOp {
   border: 1px solid #172C49; }
+
+.backgroundgrey {
+  background-color: #e7e9f0;
+  border-radius: 8px; }
+  .backgroundgrey input {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 1px solid #172C49 !important;
+    color: #172C49 !important; }
+  .backgroundgrey i {
+    color: #172C49 !important;
+    font-size: 28px;
+    margin-top: -6px; }
+  .backgroundgrey .btn-blue {
+    background-color: #172C49;
+    height: 40px;
+    position: relative;
+    top: -10px;
+    font-weight: 700;
+    color: #FFFFFF; }
+  .backgroundgrey .btn-blue:hover {
+    background-color: #EA4C64;
+    border: 1px solid #EA4C64; }
+  .backgroundgrey p {
+    color: #172C49;
+    font-size: 12px;
+    margin-bottom: 0px; }
