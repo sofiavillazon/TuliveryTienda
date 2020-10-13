@@ -702,6 +702,17 @@ textarea:focus, input:focus, input:hover, button:focus {
     top: 11px; }
   .vertical-menu-modern.menu-expanded .main-menu .navigation li.open > a:not(.mm-next):after {
     transform: rotate(90deg); }
+    .vertical-menu-modern.menu-collapsed .main-menu .navigation > li > a > span {
+      opacity: 0;
+      padding: 0px 0px 0px 0px!important; }
+
+  // .vertical-menu-modern.menu-collapsed .main-menu .navigation span {
+  //   display: none;
+  //  }
+  //  .vertical-menu-modern.menu-expanded .main-menu .navigation span {
+  //   display: inline-block;
+  //  }
+  
 
 .vertical-menu-modern.menu-expanded .content,
 .vertical-menu-modern.menu-expanded .footer {
