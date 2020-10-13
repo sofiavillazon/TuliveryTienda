@@ -3607,7 +3607,7 @@ input:checked + .slider:before {
   background-color: #6B6F82;
   opacity: 0.5; }
 
-.custom-radio {
+.custom-radio.step {
   width: 70px; }
 
 .tablePrice {
