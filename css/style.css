@@ -3761,3 +3761,6 @@ input:checked + .slider:before {
     color: #172C49;
     font-size: 12px;
     margin-bottom: 0px; }
+
+.fw-100 {
+  width: 100% !important; }
