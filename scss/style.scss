@@ -209,7 +209,8 @@ textarea:focus, input:focus, input:hover, button:focus {
 
 .empresaNombre{
   display: inline-block;
-  width: 140px;
+  max-width: 440px;
+  // width: 140px;
   h4{
     font-size: 12px;
     color: $blue;
@@ -3907,4 +3908,16 @@ input:checked + .slider:before {
 }
 .fw-100{
   width: 100%!important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #172c49;
+  border: 1px solid #172c49;
+  color: #fff;
+  border-radius: 4px;
+  cursor: default;
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+  padding: 0 5px;
 }
