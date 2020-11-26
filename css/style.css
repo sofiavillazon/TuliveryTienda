@@ -82,6 +82,14 @@ textarea:focus, input:focus, input:hover, button:focus {
   display: block;
   float: right; }
 
+.f-right-inline {
+  text-align: right;
+  display: flex;
+  float: right; }
+
+.height38 {
+  height: 38px; }
+
 .f-right a {
   float: right; }
 
@@ -544,7 +552,26 @@ textarea:focus, input:focus, input:hover, button:focus {
     border-right: 8px solid #172C49; }
   .form-signin {
     width: 85% !important;
-    margin-top: 120px !important; } }
+    margin-top: 120px !important; }
+  .invitation {
+    width: 85% !important; }
+  .displaybutton-xs {
+    display: block !important; } }
+
+.displaybutton-xs {
+  display: none; }
+
+.invitation {
+  background-color: #FFFFFF;
+  padding: 40px;
+  width: 50%;
+  height: auto;
+  margin: 40px auto;
+  top: 10%; }
+
+#login .rightPanel {
+  width: 60%;
+  border-right: 8px solid #172C49; }
 
 /*==================================================*/
 /*2.-MENU SIDEBAR..........................*/
@@ -651,6 +678,9 @@ textarea:focus, input:focus, input:hover, button:focus {
 .vertical-menu-modern.menu-collapsed .navbar.navbar-brand-center .navbar-header {
   float: left;
   width: auto; }
+
+.sm {
+  font-size: 18px !important; }
 
 .vertical-menu-modern.menu-collapsed .navbar.navbar-brand-center .navbar-brand .brand-text {
   animation: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s normal forwards 1 fadein; }
@@ -805,7 +835,9 @@ textarea:focus, input:focus, input:hover, button:focus {
     width: 0; }
   .vertical-menu-modern .content,
   .vertical-menu-modern .footer {
-    margin-left: 0; } }
+    margin-left: 0; }
+  [data-menu="vertical-menu-modern"] .header-navbar.navbar-with-menu .navbar-container {
+    background: #f5f5f5; } }
 
 @media (max-width: 767.98px) {
   .vertical-menu-modern.vertical-menu-modern .main-menu {
@@ -2287,9 +2319,19 @@ body:after {
   width: 40%;
   height: 100vh; }
 
-#login .rightPanel {
-  width: 60%;
-  border-right: 8px solid #172C49; }
+#login .topPanel {
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  z-index: 5;
+  background-color: #172C49; }
+  #login .topPanel .logosm {
+    padding-top: 15px;
+    padding-right: 50px; }
+
+#login .bottomPanel {
+  margin-top: 50px;
+  width: 100%; }
 
 .form-signin {
   background-color: #FFFFFF;
@@ -2562,6 +2604,17 @@ body:after {
 .custom-select {
   background: none;
   border: 1px solid #6B6F82; }
+
+.custom-select-line {
+  background: none;
+  border: 1px solid #fff;
+  margin-bottom: 0px; }
+
+.selectArrow.line:after {
+  color: #fff; }
+
+.selectArrow.line {
+  margin-bottom: 0px; }
 
 .right-inner-addon {
   position: relative; }
@@ -3348,7 +3401,7 @@ input:checked + .slider:before {
   position: relative;
   display: block;
   width: 100%;
-  min-height: 60px; }
+  min-height: 75px; }
   .steps ul {
     display: table;
     width: 100%;

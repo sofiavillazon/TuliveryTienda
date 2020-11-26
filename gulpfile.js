@@ -12,7 +12,6 @@ function style() {
         .pipe(gulp.dest('./css'))
     // 4. stream changes to all browser
         .pipe(browserSync.stream());
-        
 }
 
 function watch() {

@@ -239,35 +239,6 @@ $(document).on('ready', function() {
 
 
 
-/*==================================================*/
-/*2.-Accordion .....................................*/
-/*==================================================*/
-
-var accordionsClose = document.querySelectorAll('.collapse');
-for (var i = 0; i < accordionsClose.length; i++) {
-    accordionsClose[i].classList.add('show');
-}
-
-document.addEventListener('click', function (event) {
-    //Bail if our clicked element doesn't have the class
-    if (!event.target.classList.contains('accordion-toggle')) return;
-    
-    // Get the target content
-    var content = document.querySelector(event.target.hash);
-    if (!content) return;
-    
-    // Prevent default link behavior
-    event.preventDefault();
-    
-    // If the content is already expanded, collapse it and quit
-    if (content.classList.contains('show')) {
-    content.classList.remove('show');
-    return;
-    }
-
-    // Toggle our content
-    content.classList.toggle('show');
-})
 
  // Type List - Products
  $('.gridList').on('click', function(){

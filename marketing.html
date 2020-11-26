@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr">
+<html class="loading" lang="en">
     <!-- BEGIN: Head-->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,7 +11,6 @@
         <!-- BEGIN: Theme CSS-->
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
-        <link rel="stylesheet" type="text/css" href="css/dropify.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <!-- END: Head-->
@@ -30,7 +29,8 @@
                             </a>
                         </li>
                         <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-left font-medium-3 white" ></i></a></li>
-                        <li class="nav-item displaybutton-xs nav-toggle"><a class="nav-link open-navbar-container collapsed" data-toggle="collapse" data-target="#navbar-mobile" ><i class="sm icon-arrow-down"></i></a></li>
+                        <li class="nav-item displaybutton-xs nav-toggle"><a class="nav-link open-navbar-container collapsed" data-toggle="collapse" data-target="#navbar-mobile" aria-expanded="false"><i class="sm icon-arrow-down"></i></a></li>
+
                     </ul>
                 </div>
                 <div class="navbar-container content">
@@ -128,7 +128,7 @@
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" >
                     <li class=" nav-item"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
-                    <li class="open nav-item">
+                    <li class=" nav-item">
                         <a href="#"><i class="icon-sale"></i><span class="menu-title">Ventas </span>
                         </a>
                         <ul class="menu-content">
@@ -148,7 +148,7 @@
                     </li>
                     <li class=" nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
                     </li>
-                    <li class=" nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
+                    <li class="open nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
                     </li>
                     <li class=" nav-item"><a href="reportes.html"><i class="icon-report"></i><span class="menu-title">Reportes</span></a>
                     </li>
@@ -156,95 +156,113 @@
             </div>
         </div>
         <!-- END: Main Menu-->
-        
         <!-- BEGIN: Content-->
         <div class="app-content content">
             <div class="content-wrapper">
                 <div class="content-body pt-6 px-5 pb-4">
                     <div class="row">
-                        
-                        <div class="col-md-12 mt-4 mb-4 bgContainer formContent">
-                            <div class="col-md-12 col-sm-12 mt-1 pl-0 tittleContent">
-                                <h5>COMPLETA EL REGISTRO DE TU TIENDA</h5>
-                            </div>
-                            <div class="col-md-12 steps mb-2 mt-2">
-                                <ul class="wizardOption">
-                                    <li class="active"><a href="#"><div class="itemNumber">1</div><div class="itemText">Mi Comercio</div></a></li>
-                                    <li class="active"><a href="#"><div class="itemNumber">2</div><div class="itemText">Mi Local</div></a></li>
-                                    <li class="active"><a href="#"><div class="itemNumber">3</div><div class="itemText">Mi Suscripción</div></a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="tittle"><span>Realizar mi suscripción</span></div>
-                            
-                            <table class="mt-2">
-                                <tr>
-                                    <td><strong>Fecha de inicio:</strong></td>
-                                    <td> 15 de Setiembre de 2020</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Fin de paríodo gratis:</strong></td>
-                                    <td> 15 de Octubre de 2020</td>
-                                </tr>
-                            </table>
-                            
-                            <br>
+                        <div class="col-md-12 mt-4 mb-0 bgContainer ">
+                            <div class=" mt-2">
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12 tittleContent">
+                                        <h5>MARKETING</h5>
+                                        <p>Agregaro o editar productos</p>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 f-right-inline mt-1">
+                                        <div class="input-group search">
+                                            <div class="right-inner-addon input-container">
+                                                <i class="icon-search"></i>
+                                                <input type="text" class="form-control" placeholder="Buscar usuarios"/>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-red-dark height38 my-0 ml-2" onclick="location.href='crearCampaña.html'">NUEVO</button>
+                                    </div>
+                                   
+                                    <!-- <div class="col-md-12">
+                                        <div class="separador mt-0"></div>
+                                    </div> -->
+                                    <div class="col-md-12">
+                                        <div class="backgroundblue pt-3 pb-0 px-4 my-3">
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-12 f-right mt-1">
+                                                    <div class="input-group search">
+                                                        <div class="right-inner-addon input-container">
+                                                            <i class="icon-calendar"></i>
+                                                            <input type="text" class="form-control" placeholder="Desde">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-12 f-right mt-1">
+                                                    <div class="input-group search">
+                                                        <div class="right-inner-addon input-container">
+                                                            <i class="icon-calendar"></i>
+                                                            <input type="text" class="form-control" placeholder="Hasta">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-12 mt-1">
+                                                    <button class="btn btn-blue my-2 mr-2">DESCARGAR</button>
+                                                </div>
 
-                            <div class="card-deck mb-3 text-center px-0">
-                                <div class="card cardPro mb-4  mx-0">
-                                  <div class="card-body cardInfoBanner">
-                                    <div class="message">Plan Actual</div>
-                                    <h4>Plan Básico</h4>
-                                    <p>Precio mensual por tienda</p>
-                                    <div class="separador"></div>
-                                    <ul class="listSuscribe">
-                                        <li>Tienda digital web</li>
-                                        <li>Tienda digital en app</li>
-                                        <li>Recibe soporte para el manejo de tu contenido</li>
-                                    </ul>
-                                    
-                                    <h1><strong>S/. 30.00</strong><span>/mes</span></h1>
-                                  </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-3 responsiveTable">
+                                        <table class="tableTulivery">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Campaña</th>
+                                                    <th>Tipo</th>
+                                                    <th>Título</th>
+                                                    <th>Creado</th>
+                                                    <th>Estado</th>
+                                                    <th>Envío</th>
+                                                    <th>Q OK</th>
+                                                    <th>Q Fallidos</th>
+                                                    <th>Editar</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Promoción 28 Julio</td>
+                                                    <td>Email</td>
+                                                    <td>Leva 2 y paga 1</td>
+                                                    <td>26/07/2020</td>
+                                                    <td>Pendiente</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td><button data-toggle="modal" data-target="#editar" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Promoción 28 Julio</td>
+                                                    <td>Email</td>
+                                                    <td>Leva 2 y paga 1</td>
+                                                    <td>26/07/2020</td>
+                                                    <td>Pendiente</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td><button data-toggle="modal" data-target="#editar" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Promoción 28 Julio</td>
+                                                    <td>Email</td>
+                                                    <td>Leva 2 y paga 1</td>
+                                                    <td>26/07/2020</td>
+                                                    <td>Pendiente</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td><button data-toggle="modal" data-target="#editar" class="btn btn-blue my-2 mr-2">EDITAR</button></td>
+                                                </tr>
+
+                                              
+                                               
+                                               
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
-                                <div class="card cardPro mb-4  mx-0">
-                                    
-                                    <div class="card-body cardInfoBanner active">
-                                      <div class="message">Plan Actual</div>
-                                      <h4>Plan Estándar</h4>
-                                      <p>Precio mensual por tienda</p>
-                                      <div class="separador"></div>
-                                      <ul class="listSuscribe">
-                                          <li>Tienda digital web</li>
-                                          <li>Tienda digital en app</li>
-                                          <li>Envía emails de marketing con tus promociones</li>
-                                          <li>Envía notificaciones al celular con tus promociones</li>
-                                          <li>Recibe soporte para el manejo de tu contenido</li>
-                                      </ul>
-                                      <h1><strong>S/. 60.00</strong><span>/mes</span></h1>
-                                    </div>
-                                  </div>
-                    
-                                  <div class="card cardPro mb-4  mx-0">
-                                    <div class="card-body cardInfoBanner ">
-                                      <div class="message">Plan Actual</div>
-                                      <h4>Plan Premium</h4>
-                                      <p>Precio mensual contrato por 1 año</p>
-                                      <div class="separador"></div>
-                                      <ul class="listSuscribe">
-                                        <li>Tienda digital web</li>
-                                        <li>Tienda digital en app</li>
-                                        <li>Acceso a tu propio APP (Android, iOS) para resaltar tu marca</li>
-                                        <li>Envía emails de marketing con tus promociones</li>
-                                        <li>Envía notificaiones al celular con tus promociones</li>
-                                        <li>Recibe soporte para el manejo de tu contenido</li>
-                                    </ul>
-                                      <h1><strong>S/. 500.00</strong><span>/mes</span></h1>
-                                    </div>
-                                  </div>
-                              </div>
-
-                            <div class="col-md-12 f-right mt-4">
-                                <button class="btn btn-red-dark btn-xl">Continuar</button>
                             </div>
                         </div>
                     </div>
@@ -253,14 +271,79 @@
         </div>
         <!-- END: Content-->
 
-    
-        <script src="js/vendors.min.js"></script>
+        
+     <!-- ######################### MODAL - Más informacón  #########################  -->
+     <div class="modal fade modalSideRight modal-right" id="nuevoUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-close"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="panelPedido detalle pb-5">
+                        <div class="headerPanel">
+                            <div class="left">
+                                <h6 class="mt-2 pb-0 mb-0"><strong>Crear Usuario</strong></h6>
+                                <p>Edición de usuario</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-12 mt-3 px-0">
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Nombre</label>
+                                <input type="text" class="form-control formModal" placeholder="Ingrese el nombre del usuario">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Email</label>
+                                <input type="text" class="form-control formModal" placeholder="Ingrese su email">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Contraseña</label>
+                                <input type="password" class="form-control formModal" placeholder="Ingrese contraseña">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Teléfono</label>
+                                <input type="text" class="form-control formModal" placeholder="Ingrese su teléfono">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Rol de usuario</label>
+                                    <select class="custom-select">
+                                    <option selected="">Seleccione un Rol</option>
+                                    <option value="1">Rol 1</option>
+                                    <option value="2">Rol 2</option>
+                                    <option value="3">Rol 3</option>
+                                  </select>
+                            </div>
+                            <div class="form-label-group mt-2 ">
+                                <label for="inputPassword">Tienda</label>
+                                <div class="selectArrow">
+                                    <select class="custom-select select__field">
+                                        <option selected="">Seleccione una tienda</option>
+                                        <option value="1">Tienda 1</option>
+                                        <option value="2">Tienda 2</option>
+                                        <option value="3">Tienda 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="f-right mt-4">
+                                <button class="btn btn-red-dark">CERRAR</button>
+                                <button class="btn btn-blue">GUARDAR</button>
+                            </div>
 
+                        </div>
+                       
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <script src="js/vendors.min.js"></script>
         <script src="js/app-menu.js"></script>
         <script src="js/app.js"></script>
-        <script src="js/dropify.min.js"></script>
-    
-
     </body>
     <!-- END: Body-->
 </html>
