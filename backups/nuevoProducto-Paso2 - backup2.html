@@ -161,75 +161,29 @@
         <div class="app-content content">
             <div class="content-wrapper">
                 <div class="content-body pt-6 px-5 pb-4">
-                    <div class="lineFormPhone">
+                    <div class="row">
                         
-                        <div class="leftPreview mt-4 mb-0 bgContainer formContent">
+                        <div class="col-md-12 mt-4 mb-0 bgContainer formContent">
                             <div class="col-md-12 col-sm-12 mt-1 pl-0 tittleContent">
-                                <h5>INGRSESA UN NUEVO PRODUCTO O SERVICIO</h5>
+                                <h5>INGRSESA UN  NUEV PRODUCTO O SERVICIO</h5>
                             </div>
                             <div class="col-md-12 steps mb-2 mt-2">
                                 <ul class="wizardOption">
                                     <li class="active"><a href="#"><div class="itemNumber">1</div><div class="itemText">Datos del producto</div></a></li>
-                                    <li><a href="#"><div class="itemNumber">2</div><div class="itemText">Adicionar atributos</div></a></li>
+                                    <li class="active"><a href="#"><div class="itemNumber">2</div><div class="itemText">Adicionar atributos</div></a></li>
                                     <li><a href="#"><div class="itemNumber">3</div><div class="itemText">Adicionar extras</div></a></li>
                                 </ul>
                             </div>
-
-                            <div class="tittle"><span>Información sobre el producto</span></div>
+                            <div class="tittle"><span>información sobre el atributo</span></div>
                               
                             <div class="row">
-                                <div class="col-md-6 mt-2">
-                                    <label for="inputPassword">Categoría</label>
-                                    <input type="text" class="form-control formModal" placeholder="Seleccionar categoría">
+                                <div class="col-md-8 mt-2">
+                                    <label for="inputPassword">Título del atributo</label>
+                                    <input type="text" class="form-control formModal" placeholder="Seleccione una categoría">
                                 </div>
-                                <div class="col-md-6 mt-2">
-                                    <label for="inputPassword">Nombre</label>
-                                    <input type="text" class="form-control formModal" placeholder="Ingrese nombre del producto">
-                                </div>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-md-12 mt-2">
-                                    <label for="inputPassword">Descripción</label>
-                                    <textarea class="form-control formModal" placeholder="Ingrese la descripción de su producto" name="" id="" cols="30" rows="4"></textarea>
-                                </div>
-                                
+                           
                             </div>
 
-                            <div class="row">
-                                <div class="col-md-6 mt-2">
-                                    <label for="inputPassword">Es visible en público</label>
-                                    <div class="selectArrow">
-                                        <select class="custom-select select__field">
-                                            <option selected="">Seleccione una opción</option>
-                                            <option value="1">Opción 1</option>
-                                            <option value="2">Opción 2</option>
-                                            <option value="3">Opción 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-2">
-                                    <label for="inputPassword">Orden de catálogo</label>
-                                    <div class="selectArrow">
-                                        <select class="custom-select select__field">
-                                            <option selected="">Seleccione una opción</option>
-                                            <option value="1">Opción 1</option>
-                                            <option value="2">Opción 2</option>
-                                            <option value="3">Opción 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-4 mt-2">
-                                    <label for="inputPassword">Logo</label>
-                                    <input type="file" class="logoInput" data-min-height="400" />
-                                </div>
-                            </div>
-
-                            <div class="mt-4 tittle"><span>Información sobre los precios</span></div>
-                            
                             <div class="row justify-content-start align-items-left mx-0">
                                 <div class="mt-4">
                                     <label for="inputPassword">¿Tu producto tiene diferentes precios por tamaño?</label>
@@ -244,18 +198,14 @@
                                           <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required="">
                                           <label class="custom-control-label" for="debit">NO</label>
                                         </div>
-                                        <div class="d-flex">
-                                            <span class="mt-2 mr-1">Precio </span>
-                                            <input type="text" class="form-control formModal" placeholder="Precio en S/.">
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row mt-4 mb-1 pb-0 tablePrice">
-                                <div class="col-3">Tamaño</div>
+                                <div class="col-3">Atributo</div>
                                 <div class="col-3">Precio</div>
-                                <div class="col-3">Principal</div>
                                 <div class="col-3">Eliminar</div>
                             </div>
 
@@ -268,15 +218,12 @@
                                             <div data-repeater-item>
                                                 <form class="form row">
                                                     <div class="form-group mb-0 col-3">
-                                                        <input type="text" class="form-control formModal inputTable" placeholder="Ejm. Familiar 31">
+                                                        <input type="text" class="form-control formModal inputTable" placeholder="Ejm. Meat balls">
                                                     </div>
                                                     <div class="form-group mb-0 col-3">
                                                         <input type="text" class="form-control formModal inputTable" placeholder="Precio en S/.">
                                                     </div>
-                                                    <div class="form-group mb-0 col-3 align-center">
-                                                        <!-- <button class="btn btn-lightBlue inactive"><img src="images/checkForm.png" alt=""></button> -->
-                                                        <button class="btn btn-lightBlue "><img src="images/checkForm.png" alt=""></button>
-                                                    </div>
+                                                    
                                                     <div class="form-group mb-0 col-3 align-center">
                                                         <button class="btn btn-lightred " data-repeater-delete><img src="images/delete.png" alt=""></button>
                                                     </div>
@@ -294,170 +241,12 @@
                                 </section>
                                 <!-- // Form repeater section end -->
                             </div>
-
-
-                            <div class="col-md-12 align-right mt-4">
-                                <button class="btn btn-red-dark btn-xl" onclick="location.href='nuevoProducto-Paso2.html'">Continuar</button>
+ 
+                            <div class="col-md-12 f-right mt-4">
+                                <button class="btn btn-red-dark btn-xl" onclick="location.href='nuevoProducto-Paso3.html'">Continuar</button>
                             </div>
 
                         </div>
-
-                        <div class="rightPreview mt-4 mb-0 pl-3 pr-0 fixedElm">
-                            <div class="phoneFrame-light" style="background-image: url('images/app/marco-01.png');">
-                            </div>
-                            <div class="phoneFrame" style="background-image: url('images/app/light-01.png');">
-                            </div>
-                            <div class="phoneContent">
-                                <div class="header">
-                                    <div class="row px-0 mx-0 bgstore" style="background-image: url('images/app/bgStore.png');">
-                                        <div class="arrow col-md-12 mt-2 ">
-                                            <div class="rotate-180">
-                                                <i class="icon-circle-arrow-right"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row flex-row px-0 mx-0 pt-3 pb-1 bgblack">
-                                            <div class="logo pt-3 pr-0">
-                                                <img src="images/app/Ruta.png" alt="">
-                                            </div>
-                                            <div class="info pt-4 pl-0">
-                                                <h1>Pizza Raúl</h1>
-                                                <h4><strong>Envío:</strong> 3.00 Ped. <strong>Min:</strong> 10.00 </h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="options">
-                                    <div class="row mx-0 px-0">
-                                        <div class="send col-md-12 px-2">
-                                            <ul>
-                                                <li><img src="images/app/icon-delivery@1x.png" alt=""> Delivery</li>
-                                                <li><img src="images/app/icon-store@1x.png" alt=""> Recojo</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="orangeOp">
-                                    <div class="row mx-0 px-0">
-                                        <div class="scroll-x col-md-12 px-2">
-                                            <ul>
-                                                <li class="active">Promociones</li>
-                                                <li>Pizzas Gigantes</li>
-                                                <li>Pizzas</li>
-                                                <li>otros</li>
-                                            </ul>
-                                            <div class="separador my-2"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="contentProd">
-                                    <div class="row mx-0 px-0">
-                                        <div class="col-md-12 px-2">
-                                            <h6>Promociones</h6>
-                                        </div>
-                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
-                                            <div class="card card-center flex-row mb-2 shadow-sm">
-                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
-                                                </div>
-                                                <div class="card-body d-flex flex-column">
-                                                    <h5 class="mb-0 ">
-                                                        Promoción 2 Pizzas Familiar Kids
-                                                    </h5>
-                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
-                                                </div>
-                                                <div class="card-total">
-                                                    <h5 class="mb-0 pb-0">
-                                                        S/.41.00
-                                                    </h5>
-                                                    <div class="blue-circle">
-                                                        <img src="images/app/icon-plus@1x.png" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
-                                            <div class="card card-center flex-row mb-2 shadow-sm">
-                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
-                                                </div>
-                                                <div class="card-body d-flex flex-column">
-                                                    <h5 class="mb-0 ">
-                                                        Promoción 2 Pizzas Familiar Kids
-                                                    </h5>
-                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
-                                                </div>
-                                                <div class="card-total">
-                                                    <h5 class="mb-0 pb-0">
-                                                        S/.57.50
-                                                    </h5>
-                                                    <div class="blue-circle">
-                                                        <img src="images/app/icon-plus@1x.png" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
-                                            <div class="card card-center flex-row mb-2 shadow-sm">
-                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
-                                                </div>
-                                                <div class="card-body d-flex flex-column">
-                                                    <h5 class="mb-0 ">
-                                                        Promoción 2 Pizzas Fiesta
-                                                    </h5>
-                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
-                                                </div>
-                                                <div class="card-total">
-                                                    <h5 class="mb-0 pb-0">
-                                                        S/.66.00
-                                                    </h5>
-                                                    <div class="blue-circle">
-                                                        <img src="images/app/icon-plus@1x.png" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
-                                            <div class="card card-center flex-row align-items-middle mb-2 shadow-sm">
-                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
-                                                </div>
-                                                <div class="card-body d-flex flex-column">
-                                                    <h5 class="mb-0 ">
-                                                        Combo 3 pastas
-                                                    </h5>
-                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
-                                                </div>
-                                                <div class="card-total">
-                                                    <h5 class="mb-0 pb-0">
-                                                        S/.11.00
-                                                    </h5>
-                                                    <div class="blue-circle">
-                                                        <img src="images/app/icon-plus@1x.png" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
-                                            <div class="card card-center flex-row mb-2 shadow-sm">
-                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
-                                                </div>
-                                                <div class="card-body d-flex flex-column">
-                                                    <h5 class="mb-0 ">
-                                                        Combo 2 pastas
-                                                    </h5>
-                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
-                                                </div>
-                                                <div class="card-total">
-                                                    <h5 class="mb-0 pb-0">
-                                                        S/.11.00
-                                                    </h5>
-                                                    <div class="blue-circle">
-                                                        <img src="images/app/icon-plus@1x.png" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>    
                     </div>
                 </div>
             </div>
@@ -479,38 +268,7 @@
         <script src="js/form-repeater.js"></script>
         <!-- END: Page JS-->
 
-        <script>
-            $(document).ready(function(){
-                // Translated
-                $('.logoInput').dropify({
-                    messages: {
-                        default: 'Logo',
-                        info: 'png, 600x350',
-                        replace: 'Logo',
-                        remove:  'Eliminar',
-                        error:   'No se subió el archivo'
-                    }
-                });
-                $('.compactoInput').dropify({
-                    messages: {
-                        default: 'Logo',
-                        info:  'png, 600x350',
-                        replace: 'Logo',
-                        remove:  'Eliminar',
-                        error:   'No se subió el archivo'
-                    }
-                });
-                $('.completoInput').dropify({
-                    messages: {
-                        default: 'Logo',
-                        info: 'png, 600x350',
-                        replace: 'Logo',
-                        remove:  'Eliminar',
-                        error:   'No se subió el archivo'
-                    }
-                });
-            });
-        </script>
+       
 
 
     </body>
