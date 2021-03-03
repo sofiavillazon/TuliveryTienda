@@ -16,7 +16,7 @@
     </head>
     <!-- END: Head-->
     <!-- BEGIN: Body-->
-    <body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
+    <body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar  menu-collapsed pace-done" data-menu="vertical-menu-modern" data-col="2-columns">
         <!-- BEGIN: Header-->
         <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-light navbar-shadow">
             <div class="navbar-wrapper">
@@ -30,7 +30,7 @@
                             </a>
                         </li>
                         <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-left font-medium-3 white" ></i></a></li>
-                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-down"></i></a></li>
+                        <li class="nav-item displaybutton-xs nav-toggle"><a class="nav-link open-navbar-container collapsed" data-toggle="collapse" data-target="#navbar-mobile" ><i class="sm icon-arrow-down"></i></a></li>
                     </ul>
                 </div>
                 <div class="navbar-container content">
@@ -128,7 +128,7 @@
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" >
                     <li class=" nav-item"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
-                    <li class="open nav-item">
+                    <li class="nav-item">
                         <a href="#"><i class="icon-sale"></i><span class="menu-title">Ventas </span>
                         </a>
                         <ul class="menu-content">
@@ -161,19 +161,19 @@
         <div class="app-content content">
             <div class="content-wrapper">
                 <div class="content-body pt-6 px-5 pb-4">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12 mt-4 tittleContent">
-                            <h5>Ingresa un nuevo producto o servicio</h5>
-                            <p>PASO 2: Adicionar Atributo</p>
-                        </div>
-                        <div class="col-md-12 steps mb-2">
-                            <ul class="wizardOption">
-                                <li class="active"><a href="#"><div class="itemNumber">1</div><div class="itemText">Datos del producto</div></a></li>
-                                <li class="active"><a href="#"><div class="itemNumber">2</div><div class="itemText">Adicionar atributos</div></a></li>
-                                <li><a href="#"><div class="itemNumber">3</div><div class="itemText">Adicionar extras</div></a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-12 mt-4 mb-0 bgContainer formContent">
+                    <div class="lineFormPhone">
+                        
+                        <div class="leftPreview mt-4 mb-0 bgContainer formContent">
+                            <div class="col-md-12 col-sm-12 mt-1 pl-0 tittleContent">
+                                <h5>INGRSESA UN  NUEV PRODUCTO O SERVICIO</h5>
+                            </div>
+                            <div class="col-md-12 steps mb-2 mt-2">
+                                <ul class="wizardOption">
+                                    <li class="active"><a href="#"><div class="itemNumber">1</div><div class="itemText">Datos del producto</div></a></li>
+                                    <li class="active"><a href="#"><div class="itemNumber">2</div><div class="itemText">Adicionar atributos</div></a></li>
+                                    <li><a href="#"><div class="itemNumber">3</div><div class="itemText">Adicionar extras</div></a></li>
+                                </ul>
+                            </div>
                             <div class="tittle"><span>información sobre el atributo</span></div>
                               
                             <div class="row">
@@ -242,10 +242,210 @@
                                 <!-- // Form repeater section end -->
                             </div>
  
-                            <div class="col-md-12 f-right mt-4">
+                            <div class="col-md-12 align-right mt-4">
                                 <button class="btn btn-red-dark btn-xl" onclick="location.href='nuevoProducto-Paso3.html'">Continuar</button>
                             </div>
 
+                        </div>
+
+                        <div class="rightPreview mt-4 mb-0 pl-3 pr-0 fixedElm">
+                            <div class="phoneFrame-light" style="background-image: url('images/app/marco-01.png');">
+                            </div>
+                            <div class="phoneFrame" style="background-image: url('images/app/light-01.png');">
+                            </div>
+                            <div class="phoneContent">
+                                <div class="header-detail">
+                                    <div class="row px-0 mx-0 bgstore" style="background-image: url('images/app/bgStore.png');">
+                                       
+                                        <div class="row flex-row px-0 mx-0 pt-3 pb-1 bgblack">
+                                            <div class="ml-0 pt-2 pl-3 pr-0 ">
+                                                <img src="images/app/arrow-left.png" alt="">
+                                            </div>
+                                            <div class="info pt-3 pl-0">
+                                                <h1>Pizza Hawaiana Gigante</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="orangeOp">
+                                    <div class="row mx-0 px-0">
+                                        <div class="col-md-12 px-2 pt-2">
+                                            <div class="d-flex justify-content-start">
+                                                <img src="images/app/check.png" alt=""> 
+                                                <span class="pt-1">Pizza Hawaiana Gigante</span>   
+                                                <span class="pt-1 pl-3">S/. 32.90 </span>
+                                            </div>
+                                            <div class="separador my-2 "></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contentProd">
+                                    <div class="row mx-0 px-0">
+                                       
+                                        <div class="col-md-12 mx-0 px-2 mb-0 mt-2 pb-0 form-atributes">
+                                            <div class="col-md-12 px-2">
+                                                <h6>Deseas Acompañar tu pizza con</h6>
+                                            </div>
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Pan al ajo especial 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.3.50
+                                                </h5>
+                                            </div>
+
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Pan al ajo especial 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.4.50
+                                                </h5>
+                                            </div>
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">
+                                                    Pan al ajo especial 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.7.00
+                                                </h5>
+                                            </div>
+                                               
+                                            
+                                        </div>
+                                        
+                                        <div class="col-md-12 mx-0 px-2 mb-0 mt-3 pb-0 form-atributes">
+                                            <div class="col-md-12 px-2">
+                                                <h6>¿Quieres una refrescante?</h6>
+                                            </div>
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck4">
+                                                    Gaseosa Inka Kola de 410 ml 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.3.50
+                                                </h5>
+                                            </div>
+                                         
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck5">
+                                                    Gaseosa Inka Cola de 410 ml 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.7.00
+                                                </h5>
+                                            </div>
+                                               
+                                        </div>
+                                        
+                                        <div class="col-md-12 mx-0 px-2 mb-0 mt-3 pb-0 form-atributes">
+                                            <div class="col-md-12 px-2">
+                                                <h6>¿Qué tan frío lo deseas?</h6>
+                                            </div>
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="defaultCheck8">
+                                                    Helada 
+                                                </label>
+                                                
+                                            </div>
+                                         
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                                <label class="form-check-label" for="defaultCheck8">
+                                                    Fría 
+                                                </label>
+                                            
+                                            </div>
+                                               
+                                        </div>
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 mt-2 pb-0 form-atributes">
+                                            <div class="col-md-12 px-2">
+                                                <h6>Deseas Acompañar tu pizza con</h6>
+                                            </div>
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Pan al ajo especial 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.3.50
+                                                </h5>
+                                            </div>
+
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Pan al ajo especial 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.4.50
+                                                </h5>
+                                            </div>
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">
+                                                    Pan al ajo especial 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.7.00
+                                                </h5>
+                                            </div>
+                                               
+                                            
+                                        </div>
+                                        
+                                        <div class="col-md-12 mx-0 px-2 mb-0 mt-3 pb-0 form-atributes">
+                                            <div class="col-md-12 px-2">
+                                                <h6>¿Quieres una refrescante?</h6>
+                                            </div>
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck4">
+                                                    Gaseosa Inka Kola de 410 ml 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.3.50
+                                                </h5>
+                                            </div>
+                                         
+                                            <div class="d-flex form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck5">
+                                                    Gaseosa Inka Cola de 410 ml 
+                                                </label>
+                                                <h5 class="mb-0 pb-0 ">
+                                                    S/.7.00
+                                                </h5>
+                                            </div>
+                                               
+                                        </div>
+                                        <div class="mt-4 mb-4 py-4">
+d
+                                        </div>
+                                    </div>
+                                </div>
+
+                               
+
+                                <div class="optionCar">
+                                    <button class="btn btn-orange">Agregar carrito</button>
+                                    <div class="total d-flex">
+                                        <div><h3>Precio</h3></div>
+                                        <div><span>S/.32.90</span></div>
+                                        <div><img src="images/app/icon-right.png" alt=""></div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

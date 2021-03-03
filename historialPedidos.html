@@ -29,7 +29,7 @@
                             </a>
                         </li>
                         <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-left font-medium-3 white" ></i></a></li>
-                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-down"></i></a></li>
+                        <li class="nav-item displaybutton-xs nav-toggle"><a class="nav-link open-navbar-container collapsed" data-toggle="collapse" data-target="#navbar-mobile" ><i class="sm icon-arrow-down"></i></a></li>
                     </ul>
                 </div>
                 <div class="navbar-container content">
@@ -167,21 +167,50 @@
                                         <h5>HISTORIAL DE PEDIDOS</h5>
                                         <p>Consulte información de pedidos</p>
                                     </div>
-                                    <div class="col-md-2 col-sm-12 f-right mt-1">
-                                        <button data-toggle="modal" data-target="#nuevoPedido" class="btn btn-red-dark  my-2 mr-2">nuevo</button>
-                                    </div>
-                                    <div class="col-md-3 col-sm-12 f-right mt-1">
-                                        <div class="input-group search">
-                                            <div class="right-inner-addon input-container">
-                                                <i class="icon-search"></i>
-                                                <input type="text" class="form-control" placeholder="Buscar usuarios"/>
+                                    <div class="col-md-12">
+                                        <div class="backgroundblue pt-3 px-4 pb-3 my-3">
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-12  mt-1">
+                                                    <div class="input-group search">
+                                                        <div class="right-inner-addon input-container">
+                                                            <i class="icon-calendar"></i>
+                                                            <input type="text" class="form-control" placeholder="Desde"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-12  mt-1">
+                                                    <div class="input-group search">
+                                                        <div class="right-inner-addon input-container">
+                                                            <i class="icon-calendar"></i>
+                                                            <input type="text" class="form-control" placeholder="Hasta"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                               
+                                                <div class="col-md-4 col-sm-12 mt-1 f-right">
+                                                    <div class="input-group search">
+                                                        <div class="right-inner-addon input-container">
+                                                            <i class="icon-search"></i>
+                                                            <input type="text" class="form-control" placeholder="Buscar"/>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <input type="text" class="form-control" placeholder="Ingrese su usuario"> -->
+                                                </div>
+                                                
+                                                <div class="col-md-4 mt-1">
+                                                    <div class="selectArrow line">
+                                                        <select class="form-control custom-select-line select__field">
+                                                            <option selected="">Seleccione su Provincia</option>
+                                                            <option value="1">Opción 1</option>
+                                                            <option value="2">Opción 2</option>
+                                                            <option value="3">Opción 3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+
                                             </div>
                                         </div>
-                                        <!-- <input type="text" class="form-control" placeholder="Ingrese su usuario"> -->
-                                    </div>
-                                
-                                    <div class="col-md-12">
-                                        <div class="separador mt-0"></div>
                                     </div>
 
                                     <div class="col-md-12 mt-3 responsiveTable">

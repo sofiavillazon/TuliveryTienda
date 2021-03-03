@@ -9,13 +9,14 @@
         <!-- BEGIN: Vendor CSS-->
         <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
         <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" href="css/vanillabox.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <!-- END: Head-->
     <!-- BEGIN: Body-->
-    <body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
+    <body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
         <!-- BEGIN: Header-->
         <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-light navbar-shadow">
             <div class="navbar-wrapper">
@@ -29,7 +30,7 @@
                             </a>
                         </li>
                         <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-left font-medium-3 white" ></i></a></li>
-                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-down"></i></a></li>
+                        <li class="nav-item displaybutton-xs nav-toggle"><a class="nav-link open-navbar-container collapsed" data-toggle="collapse" data-target="#navbar-mobile" ><i class="sm icon-arrow-down"></i></a></li>
                     </ul>
                 </div>
                 <div class="navbar-container content">
@@ -143,7 +144,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class=" nav-item"><a href="producto.html"><i class="icon-product"></i><span class="menu-title">Productos</span></a>
+                    <li class="open nav-item"><a href="producto.html"><i class="icon-product"></i><span class="menu-title">Productos</span></a>
                     </li>
                     <li class=" nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
                     </li>
@@ -259,6 +260,7 @@
 
         <script src="js/vendors.min.js"></script>
         <script src="js/app-menu.js"></script>
+        <script type="text/javascript" src="js/jquery.vanillabox-0.1.7.min.js"></script>
         <script src="js/app.js"></script>
         <!-- librerías necesarias para estadísticas -->
         <script src="js/chart.min.js"></script>

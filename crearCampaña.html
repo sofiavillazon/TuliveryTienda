@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" data-textdirection="ltr">
+<html class="loading" lang="en">
     <!-- BEGIN: Head-->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -30,7 +30,7 @@
                             </a>
                         </li>
                         <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-left font-medium-3 white" ></i></a></li>
-                        <li class="nav-item displaybutton-xs nav-toggle"><a class="nav-link open-navbar-container collapsed" data-toggle="collapse" data-target="#navbar-mobile" ><i class="sm icon-arrow-down"></i></a></li>
+                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link open-navbar-container" data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-down"></i></a></li>
                     </ul>
                 </div>
                 <div class="navbar-container content">
@@ -128,7 +128,7 @@
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" >
                     <li class=" nav-item"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
-                    <li class="open nav-item">
+                    <li class=" nav-item">
                         <a href="#"><i class="icon-sale"></i><span class="menu-title">Ventas </span>
                         </a>
                         <ul class="menu-content">
@@ -148,7 +148,7 @@
                     </li>
                     <li class=" nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
                     </li>
-                    <li class=" nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
+                    <li class="open nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
                     </li>
                     <li class=" nav-item"><a href="reportes.html"><i class="icon-report"></i><span class="menu-title">Reportes</span></a>
                     </li>
@@ -156,95 +156,79 @@
             </div>
         </div>
         <!-- END: Main Menu-->
-        
         <!-- BEGIN: Content-->
         <div class="app-content content">
             <div class="content-wrapper">
-                <div class="content-body pt-6 px-5 pb-4">
+                <div class="content-body pt-6 px-5 pb-4  ">
                     <div class="row">
-                        
-                        <div class="col-md-12 mt-4 mb-4 bgContainer formContent">
-                            <div class="col-md-12 col-sm-12 mt-1 pl-0 tittleContent">
-                                <h5>COMPLETA EL REGISTRO DE TU TIENDA</h5>
-                            </div>
-                            <div class="col-md-12 steps mb-2 mt-2">
-                                <ul class="wizardOption">
-                                    <li class="active"><a href="#"><div class="itemNumber">1</div><div class="itemText">Mi Comercio</div></a></li>
-                                    <li class="active"><a href="#"><div class="itemNumber">2</div><div class="itemText">Mi Local</div></a></li>
-                                    <li class="active"><a href="#"><div class="itemNumber">3</div><div class="itemText">Mi Suscripción</div></a></li>
-                                </ul>
-                            </div>
-                            
-                            <div class="tittle"><span>Realizar mi suscripción</span></div>
-                            
-                            <table class="mt-2">
-                                <tr>
-                                    <td><strong>Fecha de inicio:</strong></td>
-                                    <td> 15 de Setiembre de 2020</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Fin de paríodo gratis:</strong></td>
-                                    <td> 15 de Octubre de 2020</td>
-                                </tr>
-                            </table>
-                            
-                            <br>
+                        <div class="col-md-12 mt-4 mb-0 bgContainer formContent">
+                            <div class="mt-2">
 
-                            <div class="card-deck mb-3 text-center px-0">
-                                <div class="card cardPro mb-4  mx-0">
-                                  <div class="card-body cardInfoBanner">
-                                    <div class="message">Plan Actual</div>
-                                    <h4>Plan Básico</h4>
-                                    <p>Precio mensual por tienda</p>
-                                    <div class="separador"></div>
-                                    <ul class="listSuscribe">
-                                        <li>Tienda digital web</li>
-                                        <li>Tienda digital en app</li>
-                                        <li>Recibe soporte para el manejo de tu contenido</li>
-                                    </ul>
-                                    
-                                    <h1><strong>S/. 30.00</strong><span>/mes</span></h1>
-                                  </div>
+                                <div class="row">
+                                    <div class="col-md-7 col-sm-12 tittleContent">
+                                        <h5>CREAR CAMPAÑA</h5>
+                                        <p>Agregaro o editar campaña</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="separador mt-0"></div>
+                                    </div>
                                 </div>
-                                <div class="card cardPro mb-4  mx-0">
-                                    
-                                    <div class="card-body cardInfoBanner active">
-                                      <div class="message">Plan Actual</div>
-                                      <h4>Plan Estándar</h4>
-                                      <p>Precio mensual por tienda</p>
-                                      <div class="separador"></div>
-                                      <ul class="listSuscribe">
-                                          <li>Tienda digital web</li>
-                                          <li>Tienda digital en app</li>
-                                          <li>Envía emails de marketing con tus promociones</li>
-                                          <li>Envía notificaciones al celular con tus promociones</li>
-                                          <li>Recibe soporte para el manejo de tu contenido</li>
-                                      </ul>
-                                      <h1><strong>S/. 60.00</strong><span>/mes</span></h1>
-                                    </div>
-                                  </div>
-                    
-                                  <div class="card cardPro mb-4  mx-0">
-                                    <div class="card-body cardInfoBanner ">
-                                      <div class="message">Plan Actual</div>
-                                      <h4>Plan Premium</h4>
-                                      <p>Precio mensual contrato por 1 año</p>
-                                      <div class="separador"></div>
-                                      <ul class="listSuscribe">
-                                        <li>Tienda digital web</li>
-                                        <li>Tienda digital en app</li>
-                                        <li>Acceso a tu propio APP (Android, iOS) para resaltar tu marca</li>
-                                        <li>Envía emails de marketing con tus promociones</li>
-                                        <li>Envía notificaiones al celular con tus promociones</li>
-                                        <li>Recibe soporte para el manejo de tu contenido</li>
-                                    </ul>
-                                      <h1><strong>S/. 500.00</strong><span>/mes</span></h1>
-                                    </div>
-                                  </div>
-                              </div>
 
-                            <div class="col-md-12 f-right mt-4">
-                                <button class="btn btn-red-dark btn-xl">Continuar</button>
+                                <div class="tittle"><span>Datos de la campaña</span></div>
+                                <div class="row ">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12 mt-2">
+                                                <label for="inputPassword">Tipo de aviso</label>
+                                                <div class="selectArrow">
+                                                    <select class="custom-select select__field">
+                                                        <option selected="">Seleccione el tipo</option>
+                                                        <option value="1">Email</option>
+                                                        <option value="2">Notificación</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 mt-2">
+                                                <label for="inputPassword">Título</label>
+                                                <input type="text" class="form-control formModal" placeholder="Seleccionar categoría">
+                                            </div>
+                                            
+                                            <div class="col-md-12 mt-2">
+                                                <label for="inputPassword">Mensaje</label>
+                                                <textarea class="form-control formModal" placeholder="Ingrese la descripción de su producto" name="" id="" cols="30" rows="4"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-12 mt-2">
+                                                <label for="inputPassword">Logo</label>
+                                                <input type="file" class="logoInput" data-min-height="400" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-md-12 mt-4 px-0">
+                                    <div class="separador mt-0"></div>
+                                </div>
+                                <div class="tittle"><span>Probar el aviso</span></div>
+
+                                <div class="row ">
+                                    <div class="col-md-10 mt-2 f-right-inline mt-4">
+                                        <input type="text" class="form-control formModal" placeholder="Ingrese mail para probar publicidad">
+                                        <button class="btn btn-blue btn-xl ml-4" >Grabar</button>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-12 mt-4 px-0">
+                                    <div class="separador mt-0"></div>
+                                </div>
+                                <div class="col-md-12 f-right mt-3">
+                                    <button class="btn btn-red-dark btn-xl">Cancelar</button>
+                                    <button class="btn btn-blue btn-xl" >Grabar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -253,13 +237,123 @@
         </div>
         <!-- END: Content-->
 
-    
-        <script src="js/vendors.min.js"></script>
+        
+     <!-- ######################### MODAL - Más informacón  #########################  -->
+     <div class="modal fade modalSideRight modal-right" id="nuevoUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-close"></i>
+                </button>
+                <div class="modal-body">
+                    <div class="panelPedido detalle pb-5">
+                        <div class="headerPanel">
+                            <div class="left">
+                                <h6 class="mt-2 pb-0 mb-0"><strong>Crear Usuario</strong></h6>
+                                <p>Edición de usuario</p>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-12 mt-3 px-0">
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Nombre</label>
+                                <input type="text" class="form-control formModal" placeholder="Ingrese el nombre del usuario">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Email</label>
+                                <input type="text" class="form-control formModal" placeholder="Ingrese su email">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Contraseña</label>
+                                <input type="password" class="form-control formModal" placeholder="Ingrese contraseña">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Teléfono</label>
+                                <input type="text" class="form-control formModal" placeholder="Ingrese su teléfono">
+                            </div>
+                            <div class="form-label-group mt-2">
+                                <label for="inputPassword">Rol de usuario</label>
+                                    <select class="custom-select">
+                                    <option selected="">Seleccione un Rol</option>
+                                    <option value="1">Rol 1</option>
+                                    <option value="2">Rol 2</option>
+                                    <option value="3">Rol 3</option>
+                                  </select>
+                            </div>
+                            <div class="form-label-group mt-2 ">
+                                <label for="inputPassword">Tienda</label>
+                                <div class="selectArrow">
+                                    <select class="custom-select select__field">
+                                        <option selected="">Seleccione una tienda</option>
+                                        <option value="1">Tienda 1</option>
+                                        <option value="2">Tienda 2</option>
+                                        <option value="3">Tienda 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="f-right mt-4">
+                                <button class="btn btn-red-dark">CERRAR</button>
+                                <button class="btn btn-blue">GUARDAR</button>
+                            </div>
 
-        <script src="js/app-menu.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/dropify.min.js"></script>
+                        </div>
+                       
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+
+        
+    <script src="js/vendors.min.js"></script>
+
+    <script src="js/app-menu.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/dropify.min.js"></script>
     
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="js/jquery.repeater.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="js/form-repeater.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(document).ready(function(){
+            // Translated
+            $('.logoInput').dropify({
+                messages: {
+                    default: 'Logo',
+                    info: 'png, 600x350',
+                    replace: 'Logo',
+                    remove:  'Eliminar',
+                    error:   'No se subió el archivo'
+                }
+            });
+            $('.compactoInput').dropify({
+                messages: {
+                    default: 'Logo',
+                    info:  'png, 600x350',
+                    replace: 'Logo',
+                    remove:  'Eliminar',
+                    error:   'No se subió el archivo'
+                }
+            });
+            $('.completoInput').dropify({
+                messages: {
+                    default: 'Logo',
+                    info: 'png, 600x350',
+                    replace: 'Logo',
+                    remove:  'Eliminar',
+                    error:   'No se subió el archivo'
+                }
+            });
+        });
+    </script>
 
     </body>
     <!-- END: Body-->
