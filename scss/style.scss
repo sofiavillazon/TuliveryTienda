@@ -603,6 +603,13 @@ textarea:focus, input:focus, input:hover, button:focus {
   }
 }
 
+@media (max-width:991px) {
+  .barOptions .btnOption{
+    font-size: 12px!important;
+    display: table-cell!important;
+    margin-bottom: 0px ;
+  }
+}
 @media (max-width: 699px) {
     
   .grid {
@@ -618,6 +625,9 @@ textarea:focus, input:focus, input:hover, button:focus {
   
  
 }
+
+
+
 @media (max-width: 1000px) {
   .responsiveTable{
     overflow-x: scroll;
@@ -3359,6 +3369,16 @@ input:checked + .slider:before {
 
 
 @media (min-width: 992px){
+
+
+  .editSection .editButton {
+    display: none;
+  }
+
+  .editSection:hover .editButton{
+    display: block;
+  }
+
   .sticky {
     position: fixed;
     width: 23%;
@@ -4420,4 +4440,257 @@ input:checked + .slider:before {
   img{
     width: 80%;
   }
+
 }
+
+.phoneresults {
+  position: relative;
+  .roundedcard{
+  border-radius: 12px;
+  min-height: 110px;
+  }
+  .info {
+    position: relative;
+    bottom: -20px;
+    left: -5px;
+    h1{
+      border-bottom: 1px solid #fff;
+      padding-bottom: 2px;
+      width: 240px;
+    }
+    h4{
+      padding-top: 2px;
+      font-weight: 100!important;
+    }
+  }
+  .bgblack{
+    border-radius: 12px;
+    .logo{
+      position: absolute;
+      top: 165px;
+      right: 10px;
+    }
+  }
+  
+}
+
+  // plantillas
+
+  .barheader{
+    background-color:#375F8E;
+    padding: 5px 20px;
+    color: #fff;
+    h3{
+      font-size: 15px;
+      margin-top: 18px;
+      margin-left: 8px;
+    }
+    img{
+      margin-top: 10px;
+      width: 25px;
+    }
+  }
+  .searchbg {
+    padding: 10px 10px;
+    img{
+      width:100%;
+    }
+  }
+
+  .FluidElm {
+    position: relative !important;
+    top: initial !important;
+    right: initial !important;
+  }
+
+.plantilla1{
+    
+  .tiendaIco {
+    width: 80px;
+    height: 90px;
+    left: 8%;
+    top: 44px;
+    position: absolute;
+    img {
+      width: 96%;
+    }
+    .circle {
+      text-align: center;
+      border-radius: 50%;
+      height: 120px;
+      width: 120px !important;
+      background-color: #fff;
+      overflow: hidden;
+      margin-bottom: 10vh;
+      cursor: pointer;}
+    }
+
+    .tiendaIco:before {
+      width: 138px;
+      height: 138px;
+      position: absolute;
+      border-radius: 50%;
+      content: '';
+      background-color: rgba(255, 255, 255, 0);
+      border: 9px solid rgba(255, 255, 255, 0.5);
+      top: -9px;
+      left: -9px;
+    }
+
+    #slider2 {
+      margin: 0px;
+      padding: 0px;
+      height: 221px;
+      .bgimgP1 {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+      .slide {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: none;
+        overflow: hidden;
+      }
+      .slides-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      .slide:first-child {
+        display: block;
+      }
+        
+    }
+
+  }
+
+
+  .plantilla2{
+      height: 130px;
+      .circle{
+        overflow: hidden;
+        width: 120px!important;
+      }
+      .circle img {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid #E9EEF2;
+    }
+    .bannerCompacto {
+      width: 100%;
+      min-height: 80px;
+      max-height: 120px;
+      background-size: cover;
+      background-position: center;
+      margin-left: 15px;
+    }
+  }
+
+  .plantilla3{
+      height: 130px;
+      .circle{
+        overflow: hidden;
+        width: 120px!important;
+      }
+      .circle img {
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid #E9EEF2;
+    }
+    .textDetail {
+      margin-top: 10px;
+      padding-left: 10px;
+    }
+    h3 {
+      color: #46464F;
+      margin-bottom: 0px;
+      margin-top: 12px;
+      font-size: 1.75rem;
+    } 
+  }
+
+  .plantilla1,.plantilla2,.plantilla3{
+    z-index: 5!important;
+   }
+
+ 
+  .editButton{
+    display: block;
+    color: #fff;
+    background-color: $lightBlue;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 80!important;
+    img{
+      padding-top: 5px ;
+      width: 25px;
+    }
+    &:hover{
+      background-color: $blue;
+    }
+    &.p1-banner{
+     top:10px;
+      right:20px;
+    } 
+    &.p1-logo{
+      top:120px;
+      left:180px;
+     } 
+     &.p2-banner{
+       top:10px;
+       right:20px;
+     } 
+     &.p2-logo{
+      top: 80px;
+      left: 80px;
+     } 
+    &.p3-logo{
+      top: 80px;
+    left: 80px;
+      } 
+    &.pmobile1-banner{
+      top: 240px;
+      left: 240px;
+      } 
+    &.pmobile2-banner{
+      top: 20px;
+      right: 30px;
+      } 
+  }
+
+  .temph2 {
+    color: $darkGrey
+  }
+
+  .barOptions{
+    margin-top: 40px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    a{
+      color: $white;
+    }
+    .btnOption{
+      background-color: #c3d6e1;
+      padding: 10px 10px 20px 10px;
+      border-radius: 15px 15px 0px 0px;
+      margin-right: 20px;
+      color: $blue;
+      font-size: 12px;
+    }
+    .btnOption:hover{
+      background-color: #a7c4d3;
+      
+    }
+    .btnOption.active{
+      color: $white!important;
+      background-color: $blue;
+    }
+  }
