@@ -4187,7 +4187,7 @@ input:checked + .slider:before {
   text-align: right; }
 
 .inputContainer {
-  border: 1px solid #333;
+  border: 1px solid #1E8EBB;
   max-width: 100%;
   margin: 15px 0px;
   padding: 20px 10px; }
