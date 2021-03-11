@@ -4185,3 +4185,11 @@ input:checked + .slider:before {
 
 .align-right {
   text-align: right; }
+
+.inputContainer {
+  border: 1px solid #333;
+  max-width: 100%;
+  margin: 15px 0px;
+  padding: 20px 10px; }
+  .inputContainer img {
+    width: 80%; }
