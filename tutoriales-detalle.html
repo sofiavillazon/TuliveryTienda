@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html class="loading" lang="en" >
+<html class="loading" lang="en" data-textdirection="ltr">
     <!-- BEGIN: Head-->
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-        <title>Pedidos</title>
+        <title>Tutoriales</title>
         <!-- BEGIN: Vendor CSS-->
         <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
         <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" href="css/vanillabox.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <!-- END: Head-->
     <!-- BEGIN: Body-->
-    <body class="vertical-layout vertical-menu-modern 2-columns   fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
+    <body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
         <!-- BEGIN: Header-->
         <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-light navbar-shadow">
             <div class="navbar-wrapper">
@@ -126,7 +127,7 @@
         <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" data-scroll-to-active="true">
             <div class="main-menu-content">
                 <ul class="navigation navigation-main" id="main-menu-navigation" >
-                    <li class=" nav-item"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
+                    <li class="nav-item"><a href="index.html"><i class="icon-home"></i><span class="menu-title">Dashboard</span></a></li>
                     <li class=" nav-item">
                         <a href="#"><i class="icon-sale"></i><span class="menu-title">Ventas </span>
                         </a>
@@ -143,15 +144,15 @@
                             </li>
                         </ul>
                     </li>
-                    <li class=" nav-item"><a href="producto.html"><i class="icon-product"></i><span class="menu-title">Productos</span></a>
+                    <li class="nav-item"><a href="producto.html"><i class="icon-product"></i><span class="menu-title">Productos</span></a>
                     </li>
-                    <li class=" nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
+                    <li class="nav-item"><a href="cobertura.html"><i class="icon-location-menu"></i><span class="menu-title">Cobertura</span></a>
                     </li>
-                    <li class=" nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
+                    <li class="nav-item"><a href="usuarios.html"><i class="icon-user"></i><span class="menu-title">Usuarios</span></a>
                     </li>
-                    <li class="open nav-item"><a href="reportes.html"><i class="icon-report"></i><span class="menu-title">Reportes</span></a>
+                    <li class="nav-item"><a href="reportes.html"><i class="icon-report"></i><span class="menu-title">Reportes</span></a>
                     </li>
-                    <li class=" nav-item"><a href="tutoriales.html"><img src="images/tutorial.jpg" alt=""><span class="menu-title">Tutoriales</span></a>
+                    <li class="open nav-item"><a href="tutoriales.html"><img src="images/tutorial.jpg" alt=""><span class="menu-title">Tutoriales</span></a>
                     </li>
                 </ul>
             </div>
@@ -160,140 +161,58 @@
         <!-- BEGIN: Content-->
         <div class="app-content content">
             <div class="content-wrapper">
-                <div class="content-body pt-6 px-5 pb-4">
-                    <div class="row">
-                        <div class="col-md-12 mt-4 mb-0 bgContainer ">
-                            <div class=" mt-2">
-                                <div class="row">
-                                    <div class="col-md-7 col-sm-12 tittleContent">
-                                        <h5>REPORTE</h5>
-                                        <p>Seleccione la fecha de inicio y fin de reporte</p>
-                                    </div>
-                                    
-                                    <div class="col-md-12">
-                                        <div class="separador mt-0"></div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="backgroundblue py-3 px-4 my-3">
-                                            <div class="row">
-                                                <div class="col-md-2 col-sm-12 f-right mt-1">
-                                                    <div class="input-group search">
-                                                        <div class="right-inner-addon input-container">
-                                                            <i class="icon-calendar"></i>
-                                                            <input type="text" class="form-control" placeholder="Desde"/>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-2 col-sm-12 f-right mt-1">
-                                                    <div class="input-group search">
-                                                        <div class="right-inner-addon input-container">
-                                                            <i class="icon-calendar"></i>
-                                                            <input type="text" class="form-control" placeholder="Hasta"/>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3 col-sm-12 mt-1">
-                                                    <button class="btn btn-blue my-2 mr-2">DESCARGAR</button>
-                                                </div>
-
-                                                <div class="col-md-5 col-sm-12 mt-1 f-right">
-                                                    <p><strong>Ventas desde:</strong> 01-01-2020 hasta 31-01-2020</p>
-                                                    <p><strong>Total vendido: </strong> 1,500.50</p>
-                                                    <p><strong>Total liquidado: </strong> 1,450.25</p>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12 mt-3 responsiveTable">
-                                        <table class="tableTulivery">
-                                            <tbody>
-                                                <tr>
-                                                    <th>Tienda</th>
-                                                    <th>Sede</th>
-                                                    <th>Order</th>
-                                                    <th>Cliente</th>
-                                                    <th>Distrito</th>
-                                                    <th>Canal</th>
-                                                    <th>Forma de entrega</th>
-                                                    <th>Venta</th>
-                                                    <th>Mensajero</th>
-                                                    <th>Orden_fecha</th>
-                                                    <th>Status</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>Hikari</td>
-                                                    <td>La molina</td>
-                                                    <td>101567</td>
-                                                    <td>MOISES CARPIO</td>
-                                                    <td>-</td>
-                                                    <td>Tulivery</td>
-                                                    <td>Contra entrega - POS</td>
-                                                    <td>56.5</td>
-                                                    <td>Daniel molled</td>
-                                                    <td>1/06/2020</td>
-                                                    <td>Entregado</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Hikari</td>
-                                                    <td>La molina</td>
-                                                    <td>101567</td>
-                                                    <td>MOISES CARPIO</td>
-                                                    <td>-</td>
-                                                    <td>Tulivery</td>
-                                                    <td>Contra entrega - POS</td>
-                                                    <td>56.5</td>
-                                                    <td>Daniel molled</td>
-                                                    <td>1/06/2020</td>
-                                                    <td>Entregado</td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td>Hikari</td>
-                                                    <td>La molina</td>
-                                                    <td>101567</td>
-                                                    <td>MOISES CARPIO</td>
-                                                    <td>-</td>
-                                                    <td>Tulivery</td>
-                                                    <td>Contra entrega - POS</td>
-                                                    <td>56.5</td>
-                                                    <td>Daniel molled</td>
-                                                    <td>1/06/2020</td>
-                                                    <td>Entregado</td>
-                                                </tr>
-                                                
-                                                <tr>
-                                                    <td>Hikari</td>
-                                                    <td>La molina</td>
-                                                    <td>101567</td>
-                                                    <td>MOISES CARPIO</td>
-                                                    <td>-</td>
-                                                    <td>Tulivery</td>
-                                                    <td>Contra entrega - POS</td>
-                                                    <td>56.5</td>
-                                                    <td>Daniel molled</td>
-                                                    <td>1/06/2020</td>
-                                                    <td>Entregado</td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                <div class="content-body pt-6 px-5">
+                    <div class="row mt-4">
+                        <div class="col-md-12 mt-4 mb-0">
+                            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-0 px-0 pb-0 mb-0">
+                                <h2 class="mb-0 tittleHeader">Tutoriales 
+                                    <span class="tree-link">
+                                    <a href="#">Home</a>
+                                    <a href="#">Tutorial N° 1</a>
+                                    </span>
+                                </h2>
                             </div>
+                            <div class="separador"></div>
                         </div>
+
+                        <div class="row mt-4">
+                            <div class="col-lg-10 offset-lg-1">
+                                <a class="ll float-left" href="#"> <i class="icon-circle-arrow-left" aria-hidden="true"></i></a>
+                                <a class="ll float-right" href="#"> <i class="icon-circle-arrow-right" aria-hidden="true"></i></a>
+                              </div>
+                            <div id="videoRep" class="col-lg-10 offset-lg-1 ">
+                                <video id="myVideoPlayer" width="100%" height="100%" controls="" poster="https://www.tulivery.com/images/vgVideo.png" autoplay="">
+                                    <source src="https://www.tulivery.com/images/tudeliver.mp4" type="video/webm">
+                                </video>
+                            </div>
+                            
+                             <div class="video col-lg-10 offset-lg-1 ">                     
+                               <div class="row">
+                                 <div class="contenido contenidoVideo col-lg-12">
+                                     <span><a href=""><img src="images/heart.png" alt=""></a> 8 </span>
+                                     <a href="#"><h1>Tutorial N° 1</h1></a>
+                                     <h6>Sub Título</h6>
+                                     <p>Lorem ipsum dolor si amet conseptetuer elipin ducet at astraLorem ipsum Lorem ipsum dolor si amet conseptetuer elipin ducet at astraLorem ipsum Lorem ipsum dolor si amet conseptetuer elipin ducet at astraLorem ipsum Lorem ipsum dolor si amet conseptetuer elipin ducet at astraLorem ipsum  amet conseptetuer elipin ducet at astraLorem ipsum Lorem ipsum dolor si amet conseptetuer elipin ducet at astraLorem ipsum Lorem ipsum dolor si amet conseptetuer elipin ducet at astraLorem ipsum Lorem ipsum dolor si amet conseptetuer elipin ducet at astraLorem ipsum </p>
+                                 </div>
+                                 
+                               </div>
+                             </div>
+                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
         <!-- END: Content-->
-      
 
         <script src="js/vendors.min.js"></script>
         <script src="js/app-menu.js"></script>
+        <script type="text/javascript" src="js/jquery.vanillabox-0.1.7.min.js"></script>
         <script src="js/app.js"></script>
+        <!-- librerías necesarias para estadísticas -->
+        <script src="js/chart.min.js"></script>
+        <script src="js/estadisticas-tulivery.js"></script>
+        
     </body>
     <!-- END: Body-->
 </html>
