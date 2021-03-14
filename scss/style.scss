@@ -4513,7 +4513,7 @@ input:checked + .slider:before {
     top: 44px;
     position: absolute;
     img {
-      width: 96%;
+      width: 100%;
     }
     .circle {
       text-align: center;
@@ -4545,7 +4545,7 @@ input:checked + .slider:before {
       .bgimgP1 {
         width: 100%;
         height: 100%;
-        object-fit: fill;
+        object-fit: cover;
       }
       .slide {
         width: 100%;
@@ -4766,13 +4766,11 @@ input:checked + .slider:before {
     text-decoration: none;
   }
   
-  
   .video .contenido h6 {
     font-size: 15px;
     font-weight: 500;
     color: #526c90;
     letter-spacing: 1px;
-  
   }
   
   .video .contenido p {
@@ -4805,28 +4803,26 @@ input:checked + .slider:before {
     }
   }
   
-  
   .video .contenidoVideo {
-      border-radius: 4px 4px 4px 4px;
-      padding: 40px;
-      width: 100% !important;
-      background-color: $blue;
+    border-radius: 4px 4px 4px 4px;
+    padding: 40px;
+    width: 100% !important;
+    background-color: $blue;
   }
   
-  
   .ll{
-      /* background-color: #31406b; */
-      padding: 0px 6px 11px 0px;
-      width: 34px;
-      height: 34px;
-      color: $blue;
-      margin-top: 10px;
-      i{
-        font-size: 30px;
-      }
+    /* background-color: #31406b; */
+    padding: 0px 6px 11px 0px;
+    width: 34px;
+    height: 34px;
+    color: $blue;
+    margin-top: 10px;
+    i{
+      font-size: 30px;
+    }
   }
   
   .video  .ll:hover{
-      border: 2px solid #eee;
-      color: #eee;
+    border: 2px solid #eee;
+    color: #eee;
   }
