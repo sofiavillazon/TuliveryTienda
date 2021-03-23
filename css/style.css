@@ -4299,19 +4299,19 @@ input:checked + .slider:before {
   .plantilla1 #slider2 .slide:first-child {
     display: block; }
 
-.plantilla2 {
-  height: 130px; }
-  .plantilla2 .circle {
-    overflow: hidden;
-    width: 120px !important; }
+.plantilla2 .circle {
+  margin-top: 0px;
+  width: 180px !important; }
   .plantilla2 .circle img {
-    width: 100%;
+    width: 100% !important;
     border-radius: 12px;
-    border: 1px solid #E9EEF2; }
-  .plantilla2 .bannerCompacto {
+    border: 1px solid #e9eef2; }
+
+.plantilla2 .bannerCompacto {
+  padding-right: 15px; }
+  .plantilla2 .bannerCompacto img {
     width: 100%;
-    min-height: 80px;
-    max-height: 120px;
+    height: auto;
     background-size: cover;
     background-position: center;
     margin-left: 15px; }
