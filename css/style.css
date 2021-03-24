@@ -4301,9 +4301,9 @@ input:checked + .slider:before {
 
 .plantilla2 .circle {
   margin-top: 0px;
-  width: 180px !important; }
+  width: 280px !important; }
   .plantilla2 .circle img {
-    width: 100% !important;
+    width: 95% !important;
     border-radius: 12px;
     border: 1px solid #e9eef2; }
 
