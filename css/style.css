@@ -4301,14 +4301,13 @@ input:checked + .slider:before {
 
 .plantilla2 .circle {
   margin-top: 0px;
-  width: 280px !important; }
+  width: 13vw !important; }
   .plantilla2 .circle img {
-    width: 95% !important;
-    border-radius: 12px;
-    border: 1px solid #e9eef2; }
+    width: 95%; }
 
 .plantilla2 .bannerCompacto {
-  padding-right: 15px; }
+  padding-right: 15px;
+  width: 100%; }
   .plantilla2 .bannerCompacto img {
     width: 100%;
     height: auto;

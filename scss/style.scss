@@ -4570,26 +4570,26 @@ input:checked + .slider:before {
 
 
   .plantilla2{
-    .circle {
-      margin-top: 0px;
-      width: 280px !important;
-      img{
-        width: 95% !important;;
-        border-radius: 12px;
-        border: 1px solid rgb(233, 238, 242);
+      .circle {
+        margin-top: 0px;
+        width: 13vw !important;
+        img{
+          width: 95%;
+        }
       }
-    }
-    .bannerCompacto {
-      padding-right: 15px;
-      img{
+      .bannerCompacto {
+        padding-right: 15px;
         width: 100%;
-        height: auto;
-        background-size: cover;
-        background-position: center;
-        margin-left: 15px;
+        img{
+          width: 100%;
+          height: auto;
+          background-size: cover;
+          background-position: center;
+          margin-left: 15px;
+        }
       }
+  
     }
-  }
   
 
   .plantilla3{
